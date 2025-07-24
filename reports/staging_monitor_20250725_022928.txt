@@ -1,0 +1,44 @@
+STAGING AGENT - Staging Monitor REPORT
+=====================================
+Generated: Fri Jul 25 02:53:32 IST 2025
+Mode: Staging Monitor
+Agent ID: staging-agent-JHMH32WDGT-1753390768
+Control Plane URL: http://localhost:8080
+Kind Cluster: staging-cluster
+Local Namespace: staging
+Agent Port: 8082
+Output File: reports/staging_monitor_20250725_022928.txt
+Log File: logs/staging_monitor.log
+
+TIMESTAMP: 2025-07-25 02:53:32
+===============================================
+
+STAGING STATUS
+==============
+
+{"agent_id":"staging-agent-JHMH32WDGT-1753390768","status":"healthy","total_pods":0,"running_pods":0,"failed_pods":0,"staging_pods":{},"kind_cluster_status":"running","last_sync":"2025-07-25T02:53:32.487549+05:30","timestamp":"2025-07-25T02:53:32.487549+05:30"}
+
+STAGING PODS
+============
+
+{"pods":{},"timestamp":"2025-07-25T02:53:32.487738+05:30","total_pods":0}
+
+HTTP PROXIES
+============
+
+{"proxies":{},"timestamp":"2025-07-25T02:53:32.487756+05:30","total_proxies":0}
+
+PROXY STATUS
+============
+
+{"active_proxies":0,"failed_proxies":0,"proxies":{},"timestamp":"2025-07-25T02:53:32.487761+05:30","total_proxies":0}
+
+===============================================
+Staging Monitor SUMMARY
+===============================================
+Mode: Staging Monitor
+Agent ID: staging-agent-JHMH32WDGT-1753390768
+Control Plane URL: http://localhost:8080
+Kind Cluster: staging-cluster
+Output File: reports/staging_monitor_20250725_022928.txt
+Generated: Fri Jul 25 02:53:32 IST 2025

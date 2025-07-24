@@ -23,17 +23,18 @@ import (
 
 // LocalStagingAgent manages staging pods locally
 type LocalStagingAgent struct {
-	config          *StagingConfig
-	logger          logger.Logger
-	podReceiver     *controlplane.PodReceiver
-	kindCluster     *kind.KindCluster
-	k8sClient       *kubernetes.Clientset
-	stagingPods     map[string]StagingPodInfo
-	httpProxy       *HTTPProxyManager
-	mutex           sync.RWMutex
-	stopCh          chan struct{}
-	agentID         string
-	controlPlaneURL string
+	config           *StagingConfig
+	logger           logger.Logger
+	podReceiver      *controlplane.PodReceiver
+	kindCluster      *kind.KindCluster
+	k8sClient        *kubernetes.Clientset
+	stagingPods      map[string]StagingPodInfo
+	cloudflareTunnel *CloudflareTunnelManager
+	httpProxy        *HTTPProxyManager
+	mutex            sync.RWMutex
+	stopCh           chan struct{}
+	agentID          string
+	controlPlaneURL  string
 }
 
 // StagingConfig holds configuration for local staging
@@ -122,26 +123,37 @@ func NewLocalStagingAgent(config *StagingConfig, log logger.Logger) (*LocalStagi
 		log.Warn("Failed to create K8s client, continuing without cluster access", "error", err)
 	}
 
+	// Create Cloudflare tunnel manager
+	tunnelConfig := &TunnelConfig{
+		AgentID:   config.AgentID,
+		Hostname:  fmt.Sprintf("%s-agent.trycloudflare.com", config.AgentID),
+		LocalPort: 8082,
+		Protocol:  "quic",
+		AutoStart: true,
+	}
+	cloudflareTunnel := NewCloudflareTunnelManager(tunnelConfig, log)
+
 	// Create HTTP proxy manager
 	proxyConfig := &ProxyConfig{
 		AgentID:   config.AgentID,
-		ProxyPort: 8081,
-		BasePath:  "/staging",
+		ProxyPort: 8080,
+		BasePath:  "/",
 		EnableSSL: false,
 	}
 	httpProxy := NewHTTPProxyManager(proxyConfig, log)
 
 	return &LocalStagingAgent{
-		config:          config,
-		logger:          log,
-		podReceiver:     podReceiver,
-		kindCluster:     kindCluster,
-		k8sClient:       k8sClient,
-		stagingPods:     make(map[string]StagingPodInfo),
-		httpProxy:       httpProxy,
-		stopCh:          make(chan struct{}),
-		agentID:         config.AgentID,
-		controlPlaneURL: config.ControlPlaneURL,
+		config:           config,
+		logger:           log,
+		podReceiver:      podReceiver,
+		kindCluster:      kindCluster,
+		k8sClient:        k8sClient,
+		stagingPods:      make(map[string]StagingPodInfo),
+		cloudflareTunnel: cloudflareTunnel,
+		httpProxy:        httpProxy,
+		stopCh:           make(chan struct{}),
+		agentID:          config.AgentID,
+		controlPlaneURL:  config.ControlPlaneURL,
 	}, nil
 }
 
@@ -152,6 +164,19 @@ func (lsa *LocalStagingAgent) Start() error {
 	// Start pod receiver server
 	if err := lsa.podReceiver.Start(); err != nil {
 		return fmt.Errorf("failed to start pod receiver: %w", err)
+	}
+
+	// Setup Cloudflare tunnel
+	if lsa.cloudflareTunnel != nil {
+		lsa.logger.Info("Setting up Cloudflare tunnel...")
+		if tunnel, err := lsa.cloudflareTunnel.SetupTunnel(); err != nil {
+			lsa.logger.Error("Failed to setup Cloudflare tunnel", "error", err)
+		} else {
+			lsa.logger.Info("Cloudflare tunnel setup successful",
+				"hostname", tunnel.Hostname,
+				"public_url", tunnel.PublicURL,
+				"status", tunnel.Status)
+		}
 	}
 
 	// Start HTTP proxy server
@@ -176,6 +201,9 @@ func (lsa *LocalStagingAgent) Start() error {
 
 	// Start control plane communication
 	go lsa.communicateWithControlPlane()
+
+	// Register with control plane at startup
+	go lsa.registerWithControlPlane()
 
 	lsa.logger.Info("Local staging agent started successfully")
 	return nil
@@ -559,6 +587,121 @@ func (lsa *LocalStagingAgent) GetProxyStatus() map[string]interface{} {
 		}
 	}
 	return lsa.httpProxy.GetProxyStatus()
+}
+
+// registerWithControlPlane automatically registers the agent with the control plane at startup
+func (lsa *LocalStagingAgent) registerWithControlPlane() {
+	lsa.logger.Info("Registering agent with control plane...")
+
+	// Get the current Cloudflare tunnel URL
+	tunnelURL := "https://tunnel-establishing.trycloudflare.com" // Default tunnel URL
+
+	// Try to get the actual tunnel URL from the tunnel manager if available
+	if lsa.cloudflareTunnel != nil {
+		tunnels := lsa.cloudflareTunnel.GetTunnels()
+		for _, tunnel := range tunnels {
+			if tunnel.Status == "active" && tunnel.PublicURL != "" {
+				tunnelURL = tunnel.PublicURL
+				break
+			}
+		}
+	}
+
+	// Get current pod data for scheduling information
+	lsa.mutex.RLock()
+	podCount := len(lsa.stagingPods)
+	pods := make([]StagingPodInfo, 0, len(lsa.stagingPods))
+	for _, pod := range lsa.stagingPods {
+		pods = append(pods, pod)
+	}
+	lsa.mutex.RUnlock()
+
+	// Get kind cluster status
+	clusterStatus := "unknown"
+	if lsa.kindCluster != nil {
+		if status, err := lsa.kindCluster.GetClusterStatus(); err == nil {
+			clusterStatus = status
+		}
+	}
+
+	// Create comprehensive registration payload
+	registrationPayload := map[string]interface{}{
+		"host": tunnelURL,
+		"agent_info": map[string]interface{}{
+			"agent_id":  lsa.agentID,
+			"status":    "healthy",
+			"timestamp": time.Now(),
+		},
+		"pod_scheduling": map[string]interface{}{
+			"current_pods":   podCount,
+			"available_pods": pods,
+			"capabilities": map[string]interface{}{
+				"staging_pods":      true,
+				"kind_cluster":      true,
+				"http_proxy":        true,
+				"cloudflare_tunnel": true,
+				"auto_scaling":      true,
+			},
+			"resources": map[string]interface{}{
+				"cpu_available":     "4 cores",
+				"memory_available":  "8GB",
+				"storage_available": "100GB",
+				"network_ports":     []int{8080, 8082, 30000, 32767},
+			},
+			"staging_config": map[string]interface{}{
+				"namespace":      "staging",
+				"cluster_name":   "kind-staging",
+				"sync_interval":  "30s",
+				"auto_scale":     true,
+				"pod_scheduling": true,
+			},
+		},
+		"endpoints": map[string]string{
+			"health":         "/health",
+			"pod_status":     "/api/v1/pods/status",
+			"register_agent": "/api/v1/register-local-agent",
+			"pod_update":     "/api/v1/pods",
+		},
+		"cluster_status": clusterStatus,
+	}
+
+	// Send registration request
+	client := &http.Client{
+		Timeout: 30 * time.Second,
+	}
+
+	url := fmt.Sprintf("%s/api/v1/register-local-agent", lsa.controlPlaneURL)
+	jsonData, err := json.Marshal(registrationPayload)
+	if err != nil {
+		lsa.logger.Error("Failed to marshal registration payload", "error", err)
+		return
+	}
+
+	req, err := http.NewRequest("POST", url, strings.NewReader(string(jsonData)))
+	if err != nil {
+		lsa.logger.Error("Failed to create registration request", "error", err)
+		return
+	}
+
+	req.Header.Set("Content-Type", "application/json")
+	req.Header.Set("X-Agent-ID", lsa.agentID)
+
+	resp, err := client.Do(req)
+	if err != nil {
+		lsa.logger.Error("Failed to register with control plane", "error", err)
+		return
+	}
+	defer resp.Body.Close()
+
+	if resp.StatusCode != http.StatusOK {
+		lsa.logger.Error("Control plane registration failed", "status", resp.StatusCode)
+		return
+	}
+
+	lsa.logger.Info("Successfully registered with control plane",
+		"tunnel_url", tunnelURL,
+		"agent_id", lsa.agentID,
+		"pod_count", podCount)
 }
 
 // createK8sClient creates a Kubernetes client

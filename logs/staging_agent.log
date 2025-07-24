@@ -1,0 +1,15 @@
+{"level":"info","msg":"Starting staging agent...","time":"2025-07-25T02:28:41+05:30"}
+{"level":"info","msg":"Running staging agent in monitoring mode...","time":"2025-07-25T02:28:41+05:30"}
+{"level":"info","msg":"Starting local staging agent...","time":"2025-07-25T02:28:41+05:30"}
+{"level":"info","msg":"Starting pod receiver serverport8082agent_idstaging-agent-JHMH32WDGT-1753390721","time":"2025-07-25T02:28:41+05:30"}
+{"level":"info","msg":"Starting HTTP proxy server...","time":"2025-07-25T02:28:41+05:30"}
+{"level":"info","msg":"HTTP proxy server startedport8080","time":"2025-07-25T02:28:41+05:30"}
+{"level":"error","msg":"Pod receiver server errorerrorlisten tcp :8082: bind: address already in use","time":"2025-07-25T02:28:41+05:30"}
+{"level":"error","msg":"HTTP proxy server failederrorlisten tcp :8080: bind: address already in use","time":"2025-07-25T02:28:41+05:30"}
+{"level":"info","msg":"Kind cluster already existsstatusrunning","time":"2025-07-25T02:28:41+05:30"}
+{"level":"info","msg":"Local staging agent started successfully","time":"2025-07-25T02:28:41+05:30"}
+{"level":"info","msg":"Capturing staging system data...","time":"2025-07-25T02:28:41+05:30"}
+{"level":"info","msg":"Staging pods sync completedtotal_pods0local_pods0","time":"2025-07-25T02:28:41+05:30"}
+{"level":"info","msg":"Staging data captured successfullyoutput_filereports/staging_monitor_20250725_022841.txt","time":"2025-07-25T02:28:41+05:30"}
+{"level":"info","msg":"Waiting for next staging check...interval30s","time":"2025-07-25T02:28:41+05:30"}
+{"level":"error","msg":"Failed to send status to control planeerrorPost \"http://localhost:8080/api/v1/staging/status\": read tcp [::1]:50947-\u003e[::1]:8080: read: connection reset by peer","time":"2025-07-25T02:28:41+05:30"}

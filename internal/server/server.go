@@ -3,6 +3,7 @@ package server
 import (
 	"context"
 	"encoding/json"
+	"fmt"
 	"net/http"
 	"time"
 
@@ -51,6 +52,9 @@ func New(cfg *config.Config, agent agent.Agent, log logger.Logger) Server {
 func (s *server) setupRoutes() {
 	// Health check endpoint
 	s.router.HandleFunc("/health", s.healthHandler).Methods("GET")
+
+	// Agent registration endpoint
+	s.router.HandleFunc("/register-local-agent", s.registerLocalAgentHandler).Methods("POST")
 
 	// Essential resource endpoints
 	s.router.HandleFunc("/api/resources", s.getResourcesHandler).Methods("GET")
@@ -195,6 +199,53 @@ func (s *server) pollResourcesHandler(w http.ResponseWriter, r *http.Request) {
 		"timestamp": time.Now(),
 	}
 
+	json.NewEncoder(w).Encode(response)
+}
+
+// Register local agent handler
+func (s *server) registerLocalAgentHandler(w http.ResponseWriter, r *http.Request) {
+	// Parse the request body
+	var requestBody map[string]interface{}
+	if err := json.NewDecoder(r.Body).Decode(&requestBody); err != nil {
+		s.logger.Error("Failed to decode request body", err)
+		http.Error(w, "Invalid request body", http.StatusBadRequest)
+		return
+	}
+
+	// Extract host from request
+	host, ok := requestBody["host"].(string)
+	if !ok {
+		s.logger.Error("Missing or invalid host in request")
+		http.Error(w, "Missing or invalid host", http.StatusBadRequest)
+		return
+	}
+
+	s.logger.Info("Agent registration request received", "host", host)
+
+	// Generate a unique agent ID if not provided
+	agentID := fmt.Sprintf("agent-%s-%d", host, time.Now().Unix())
+
+	// Create registration response
+	response := map[string]interface{}{
+		"status":    "success",
+		"message":   "Agent registered successfully",
+		"agent_id":  agentID,
+		"host":      host,
+		"timestamp": time.Now(),
+		"endpoints": map[string]string{
+			"health":           "/health",
+			"resources":        "/api/resources",
+			"system_info":      "/api/resources/system",
+			"cpu_info":         "/api/resources/cpu",
+			"memory_info":      "/api/resources/memory",
+			"vpn_info":         "/api/resources/vpn",
+			"health_info":      "/api/resources/health",
+			"poll_resources":   "/api/poll",
+		},
+	}
+
+	w.Header().Set("Content-Type", "application/json")
+	w.WriteHeader(http.StatusOK)
 	json.NewEncoder(w).Encode(response)
 }
 

@@ -1,0 +1,91 @@
+K3s LOCAL AGENT - Monitor REPORT
+=====================================
+Generated: Fri Jul 25 04:17:30 IST 2025
+Mode: Monitor
+Namespace: default
+Output File: reports/k3s_monitor_20250725_041730.txt
+Log File: logs/k3s_monitor.log
+
+TIMESTAMP: 2025-07-25 04:17:30
+===============================================
+
+=== K3s Resource Summary ===
+Timestamp: 2025-07-25 04:17:30
+
+Local System:
+  Hostname: JHMH32WDGT
+  CPU Usage: 15.74%
+  Memory Usage: 72.59%
+  Online: true
+  Internet: true
+
+Cluster Health:
+  Total Nodes: 1
+  Ready Nodes: 1
+  Total Pods: 9
+  Running Pods: 9
+  Node Health: 100.00%
+  Pod Health: 100.00%
+
+
+JSON DATA:
+==========
+{
+  "cluster_health": {
+    "node_health": 100,
+    "pod_health": 100,
+    "ready_nodes": 1,
+    "running_pods": 9,
+    "timestamp": "2025-07-25T04:17:30.651698+05:30",
+    "total_nodes": 1,
+    "total_pods": 9
+  },
+  "local_system": {
+    "cpu": {
+      "core_count": 14,
+      "model_name": "Apple M4 Pro",
+      "timestamp": "2025-07-25T04:17:30.634491+05:30",
+      "usage_percent": 0
+    },
+    "health": {
+      "has_internet": true,
+      "is_healthy": true,
+      "is_online": true,
+      "timestamp": "2025-07-25T04:17:30.635053+05:30"
+    },
+    "memory": {
+      "available": 7058833408,
+      "free": 88834048,
+      "timestamp": "2025-07-25T04:17:30.6345+05:30",
+      "total": 25769803776,
+      "used": 18710970368,
+      "used_percent": 72.60812123616536
+    },
+    "system": {
+      "architecture": "arm64",
+      "boot_time": "2025-07-16T11:23:33+05:30",
+      "hostname": "JHMH32WDGT",
+      "os": "darwin",
+      "platform": "darwin",
+      "uptime": 752037
+    },
+    "timestamp": "2025-07-25T04:17:30.647124+05:30",
+    "vpn": {
+      "interface": "utun4",
+      "ip_address": "10.255.23.12",
+      "is_connected": true,
+      "timestamp": "2025-07-25T04:17:30.635027+05:30"
+    }
+  },
+  "node_metrics": [],
+  "pod_metrics": [],
+  "timestamp": "2025-07-25T04:17:30.654249+05:30"
+}
+
+===============================================
+Monitor SUMMARY
+===============================================
+Mode: Monitor
+Namespace: default
+Output File: reports/k3s_monitor_20250725_041730.txt
+Generated: Fri Jul 25 04:17:30 IST 2025

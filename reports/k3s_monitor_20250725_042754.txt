@@ -1,0 +1,140 @@
+K3s LOCAL AGENT - Monitor REPORT
+=====================================
+Generated: Fri Jul 25 04:28:04 IST 2025
+Mode: Monitor
+Namespace: default
+Control Plane: https://1096b8fe3d27f0.lhr.life
+Agent ID: k3s-local-agent-001
+Output File: reports/k3s_monitor_20250725_042754.txt
+Log File: logs/k3s_monitor.log
+
+TIMESTAMP: 2025-07-25 04:28:04
+===============================================
+
+=== K3s Resource Summary ===
+Timestamp: 2025-07-25 04:28:04
+
+Local System:
+  Hostname: JHMH32WDGT
+  CPU Usage: 21.61%
+  Memory Usage: 73.60%
+  Online: true
+  Internet: true
+
+Cluster Health:
+  Total Nodes: 3
+  Ready Nodes: 3
+  Total Pods: 10
+  Running Pods: 8
+  Node Health: 100.00%
+  Pod Health: 80.00%
+
+Node Metrics:
+  k3d-hackathon-cluster-agent-0:
+    CPU Available: 13955797264n / 14
+    Memory Available: 7849588Ki / 8024876Ki
+  k3d-hackathon-cluster-agent-1:
+    CPU Available: 13945378495n / 14
+    Memory Available: 7878756Ki / 8024876Ki
+  k3d-hackathon-cluster-server-0:
+    CPU Available: 13926876100n / 14
+    Memory Available: 7426272Ki / 8024876Ki
+
+Pod Metrics:
+  default/test-nginx:
+    CPU Usage: 0
+    Memory Usage: 11340Ki
+
+JSON DATA:
+==========
+{
+  "cluster_health": {
+    "node_health": 100,
+    "pod_health": 80,
+    "ready_nodes": 3,
+    "running_pods": 8,
+    "timestamp": "2025-07-25T04:28:04.195061+05:30",
+    "total_nodes": 3,
+    "total_pods": 10
+  },
+  "local_system": {
+    "cpu": {
+      "core_count": 14,
+      "model_name": "Apple M4 Pro",
+      "timestamp": "2025-07-25T04:28:04.177358+05:30",
+      "usage_percent": 24.050632903184948
+    },
+    "health": {
+      "has_internet": true,
+      "is_healthy": true,
+      "is_online": true,
+      "timestamp": "2025-07-25T04:28:04.177442+05:30"
+    },
+    "memory": {
+      "available": 6806355968,
+      "free": 80445440,
+      "timestamp": "2025-07-25T04:28:04.177366+05:30",
+      "total": 25769803776,
+      "used": 18963447808,
+      "used_percent": 73.58786265055339
+    },
+    "system": {
+      "architecture": "arm64",
+      "boot_time": "2025-07-16T11:23:33+05:30",
+      "hostname": "JHMH32WDGT",
+      "os": "darwin",
+      "platform": "darwin",
+      "uptime": 752671
+    },
+    "timestamp": "2025-07-25T04:28:04.189839+05:30",
+    "vpn": {
+      "interface": "utun4",
+      "ip_address": "10.255.23.12",
+      "is_connected": true,
+      "timestamp": "2025-07-25T04:28:04.177423+05:30"
+    }
+  },
+  "node_metrics": [
+    {
+      "cpu_available": "13955797264n",
+      "cpu_capacity": "14",
+      "cpu_usage": "44202736n",
+      "memory_available": "7849588Ki",
+      "memory_capacity": "8024876Ki",
+      "memory_usage": "175288Ki",
+      "name": "k3d-hackathon-cluster-agent-0",
+      "timestamp": "2025-07-25T04:28:04.198797+05:30"
+    },
+    {
+      "cpu_available": "13945378495n",
+      "cpu_capacity": "14",
+      "cpu_usage": "54621505n",
+      "memory_available": "7878756Ki",
+      "memory_capacity": "8024876Ki",
+      "memory_usage": "146120Ki",
+      "name": "k3d-hackathon-cluster-agent-1",
+      "timestamp": "2025-07-25T04:28:04.198798+05:30"
+    },
+    {
+      "cpu_available": "13926876100n",
+      "cpu_capacity": "14",
+      "cpu_usage": "73123900n",
+      "memory_available": "7426272Ki",
+      "memory_capacity": "8024876Ki",
+      "memory_usage": "598604Ki",
+      "name": "k3d-hackathon-cluster-server-0",
+      "timestamp": "2025-07-25T04:28:04.198798+05:30"
+    }
+  ],
+  "pod_metrics": [
+    {
+      "cpu_usage": "0",
+      "memory_usage": "11340Ki",
+      "name": "test-nginx",
+      "namespace": "default",
+      "timestamp": "2025-07-25T04:28:04.200535+05:30"
+    }
+  ],
+  "timestamp": "2025-07-25T04:28:04.200535+05:30"
+}
+

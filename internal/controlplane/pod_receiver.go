@@ -65,6 +65,9 @@ func (pr *PodReceiver) Start() error {
 	// Endpoint to get current pod data
 	mux.HandleFunc("/api/v1/pods/status", pr.handleGetPodStatus)
 
+	// Agent registration endpoint
+	mux.HandleFunc("/register-local-agent", pr.handleRegisterLocalAgent)
+
 	// Health check endpoint
 	mux.HandleFunc("/health", pr.handleHealth)
 
@@ -183,6 +186,84 @@ func (pr *PodReceiver) handleHealth(w http.ResponseWriter, r *http.Request) {
 	}
 
 	w.Header().Set("Content-Type", "application/json")
+	json.NewEncoder(w).Encode(response)
+}
+
+// handleRegisterLocalAgent handles agent registration requests
+func (pr *PodReceiver) handleRegisterLocalAgent(w http.ResponseWriter, r *http.Request) {
+	if r.Method != "POST" {
+		http.Error(w, "Method not allowed", http.StatusMethodNotAllowed)
+		return
+	}
+
+	// Parse the request body
+	var requestBody map[string]interface{}
+	if err := json.NewDecoder(r.Body).Decode(&requestBody); err != nil {
+		pr.logger.Error("Failed to decode request body", err)
+		http.Error(w, "Invalid request body", http.StatusBadRequest)
+		return
+	}
+
+	// Extract host from request
+	host, ok := requestBody["host"].(string)
+	if !ok {
+		pr.logger.Error("Missing or invalid host in request")
+		http.Error(w, "Missing or invalid host", http.StatusBadRequest)
+		return
+	}
+
+	pr.logger.Info("Agent registration request received", "host", host)
+
+	// Get current pod data for scheduling information
+	pr.mutex.RLock()
+	podCount := len(pr.podData)
+	pods := make([]PodInfo, 0, len(pr.podData))
+	for _, pod := range pr.podData {
+		pods = append(pods, pod)
+	}
+	pr.mutex.RUnlock()
+
+	// Create comprehensive registration response with pod scheduling capabilities
+	response := map[string]interface{}{
+		"status":    "success",
+		"message":   "Agent registered successfully with pod scheduling capabilities",
+		"agent_id":  pr.agentID,
+		"host":      host,
+		"timestamp": time.Now(),
+		"endpoints": map[string]string{
+			"health":           "/health",
+			"pod_status":       "/api/v1/pods/status",
+			"register_agent":   "/register-local-agent",
+			"pod_update":       "/api/v1/pods",
+		},
+		"pod_scheduling": map[string]interface{}{
+			"current_pods": podCount,
+			"available_pods": pods,
+			"capabilities": map[string]interface{}{
+				"staging_pods": true,
+				"kind_cluster": true,
+				"http_proxy":   true,
+				"cloudflare_tunnel": true,
+				"auto_scaling": true,
+			},
+			"resources": map[string]interface{}{
+				"cpu_available": "4 cores",
+				"memory_available": "8GB",
+				"storage_available": "100GB",
+				"network_ports": []int{8080, 8082, 30000, 32767},
+			},
+			"staging_config": map[string]interface{}{
+				"namespace": "staging",
+				"cluster_name": "kind-staging",
+				"sync_interval": "30s",
+				"auto_scale": true,
+				"pod_scheduling": true,
+			},
+		},
+	}
+
+	w.Header().Set("Content-Type", "application/json")
+	w.WriteHeader(http.StatusOK)
 	json.NewEncoder(w).Encode(response)
 }
 

@@ -8,7 +8,7 @@ monitor:
 
 staging:
   agent_id: "staging-agent-1"
-  control_plane_url: "http://localhost:8080"
+  control_plane_url: "https://7ab044fdb22100.lhr.life"
   control_plane_port: 8080
   kind_cluster_name: "staging-cluster"
   local_namespace: "staging"
