@@ -125,7 +125,7 @@ func NewLocalStagingAgent(config *StagingConfig, log logger.Logger) (*LocalStagi
 	// Create HTTP proxy manager
 	proxyConfig := &ProxyConfig{
 		AgentID:   config.AgentID,
-		ProxyPort: 8080,
+		ProxyPort: 8081,
 		BasePath:  "/staging",
 		EnableSSL: false,
 	}
@@ -152,6 +152,18 @@ func (lsa *LocalStagingAgent) Start() error {
 	// Start pod receiver server
 	if err := lsa.podReceiver.Start(); err != nil {
 		return fmt.Errorf("failed to start pod receiver: %w", err)
+	}
+
+	// Start HTTP proxy server
+	if lsa.httpProxy != nil {
+		lsa.logger.Info("Starting HTTP proxy server...")
+		// The HTTP proxy server will start automatically when first proxy is created
+		// For now, we'll start it with a health check endpoint
+		go func() {
+			if err := lsa.httpProxy.startHTTPServer(); err != nil {
+				lsa.logger.Error("HTTP proxy server failed", "error", err)
+			}
+		}()
 	}
 
 	// Create kind cluster if it doesn't exist
