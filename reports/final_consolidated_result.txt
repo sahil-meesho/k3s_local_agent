@@ -1,0 +1,75 @@
+LOCAL AGENT - UNIFIED Capture REPORT
+=====================================
+Generated: Thu Jul 24 19:56:37 IST 2025
+Mode: Capture
+Capture Type: Full (Resources + Health)
+Output File: reports/final_consolidated_result.txt
+Log File: logs/unified.log
+
+TIMESTAMP: 2025-07-24 19:56:37
+===============================================
+
+RESOURCE INFORMATION
+====================
+
+{
+  "system": {
+    "hostname": "JHMH32WDGT",
+    "platform": "darwin",
+    "os": "darwin",
+    "architecture": "arm64",
+    "uptime": 721984,
+    "boot_time": "2025-07-16T11:23:33+05:30"
+  },
+  "cpu": {
+    "usage_percent": 13.826136689068486,
+    "core_count": 14,
+    "model_name": "Apple M4 Pro",
+    "timestamp": "2025-07-24T19:56:37.089848+05:30"
+  },
+  "memory": {
+    "total": 25769803776,
+    "available": 7924350976,
+    "used": 17845452800,
+    "free": 209027072,
+    "used_percent": 69.24947102864583,
+    "timestamp": "2025-07-24T19:56:37.089871+05:30"
+  },
+  "vpn": {
+    "is_connected": true,
+    "ip_address": "10.255.28.105",
+    "interface": "utun4",
+    "timestamp": "2025-07-24T19:56:37.089916+05:30"
+  },
+  "health": {
+    "is_healthy": true,
+    "is_online": true,
+    "has_internet": true,
+    "timestamp": "2025-07-24T19:56:37.089934+05:30"
+  },
+  "timestamp": "2025-07-24T19:56:37.103379+05:30"
+}
+
+HEALTH INFORMATION
+==================
+
+{
+  "has_internet": true,
+  "is_healthy": true,
+  "is_online": true,
+  "timestamp": "2025-07-24T19:56:37.114195+05:30",
+  "vpn_status": {
+    "interface": "utun4",
+    "ip_address": "10.255.28.105",
+    "is_connected": true,
+    "timestamp": "2025-07-24T19:56:37.114169+05:30"
+  }
+}
+
+===============================================
+Capture SUMMARY
+===============================================
+Mode: Capture
+Capture Type: Full (Resources + Health)
+Output File: reports/final_consolidated_result.txt
+Generated: Thu Jul 24 19:56:37 IST 2025

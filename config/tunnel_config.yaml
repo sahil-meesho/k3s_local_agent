@@ -1,0 +1,28 @@
+tunnel:
+  enabled: true
+  type: "http_proxy"  # http_proxy, port_forward (legacy)
+  
+  http_proxy:
+    enabled: true
+    port: 8081
+    base_path: "/staging"
+    enable_ssl: false
+    health_check_interval: 30s
+    max_proxies: 50
+    
+  port_forward:
+    enabled: false  # Disabled due to firewall/NAT issues
+    port_range_start: 8080
+    port_range_end: 9000
+    enable_dns_proxy: false
+
+security:
+  require_authentication: true
+  allowed_origins: ["*"]
+  rate_limit: 100  # requests per minute
+  timeout: 30s
+
+logging:
+  level: "info"
+  enable_request_logging: true
+  enable_error_logging: true 

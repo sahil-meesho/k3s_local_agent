@@ -1,0 +1,59 @@
+LOCAL AGENT - UNIFIED Capture REPORT
+=====================================
+Generated: Fri Jul 25 00:18:57 IST 2025
+Mode: Capture
+Capture Type: Resources Only
+Output File: reports/unified_20250725_001852.txt
+Log File: logs/unified.log
+
+TIMESTAMP: 2025-07-25 00:18:57
+===============================================
+
+RESOURCE INFORMATION
+====================
+
+{
+  "system": {
+    "hostname": "JHMH32WDGT",
+    "platform": "darwin",
+    "os": "darwin",
+    "architecture": "arm64",
+    "uptime": 737724,
+    "boot_time": "2025-07-16T11:23:33+05:30"
+  },
+  "cpu": {
+    "usage_percent": 16.972214264873898,
+    "core_count": 14,
+    "model_name": "Apple M4 Pro",
+    "timestamp": "2025-07-25T00:18:57.112219+05:30"
+  },
+  "memory": {
+    "total": 25769803776,
+    "available": 5846630400,
+    "used": 19923173376,
+    "free": 118423552,
+    "used_percent": 77.31208801269531,
+    "timestamp": "2025-07-25T00:18:57.112228+05:30"
+  },
+  "vpn": {
+    "is_connected": true,
+    "ip_address": "10.255.23.12",
+    "interface": "utun4",
+    "timestamp": "2025-07-25T00:18:57.112294+05:30"
+  },
+  "health": {
+    "is_healthy": true,
+    "is_online": true,
+    "has_internet": true,
+    "timestamp": "2025-07-25T00:18:57.112314+05:30"
+  },
+  "timestamp": "2025-07-25T00:18:57.124017+05:30"
+}
+
+===============================================
+Capture SUMMARY
+===============================================
+Mode: Capture
+Capture Type: Resources Only
+Output File: reports/unified_20250725_001852.txt
+Generated: Fri Jul 25 00:18:57 IST 2025

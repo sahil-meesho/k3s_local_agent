@@ -1,0 +1,145 @@
+LOCAL AGENT - SINGLE RESOURCE CAPTURE
+=====================================
+Generated: Thu Jul 24 16:33:36 IST 2025
+System: Darwin JHMH32WDGT 24.5.0 Darwin Kernel Version 24.5.0: Tue Apr 22 19:53:27 PDT 2025; root:xnu-11417.121.6~2/RELEASE_ARM64_T6041 arm64
+Capture Type: Single snapshot
+
+📊 Capturing system resources...
+===============================================
+TIMESTAMP: 2025-07-24 16:33:36
+===============================================
+
+ALL RESOURCES:
+{
+  "system": {
+    "hostname": "JHMH32WDGT",
+    "platform": "darwin",
+    "os": "darwin",
+    "architecture": "arm64",
+    "uptime": 709803,
+    "boot_time": "2025-07-16T11:23:33+05:30"
+  },
+  "cpu": {
+    "usage_percent": 14.965986379473234,
+    "core_count": 14,
+    "model_name": "Apple M4 Pro",
+    "timestamp": "2025-07-24T16:33:36.463117+05:30"
+  },
+  "memory": {
+    "total": 25769803776,
+    "used": 16394878976,
+    "free": 276135936,
+    "usage_percent": 63.620503743489586,
+    "timestamp": "2025-07-24T16:33:36.463124+05:30"
+  },
+  "disk": {
+    "total": 494384795648,
+    "used": 158651441152,
+    "free": 335733354496,
+    "usage_percent": 32.09067967878187,
+    "mount_point": "/",
+    "timestamp": "2025-07-24T16:33:36.463128+05:30"
+  },
+  "network": {
+    "ip_addresses": [
+      "10.120.16.246",
+      "10.255.24.113"
+    ],
+    "interfaces": [
+      "anpi1",
+      "anpi2",
+      "anpi0",
+      "en4",
+      "en5",
+      "en6",
+      "en1",
+      "en2",
+      "en3",
+      "bridge0",
+      "ap1",
+      "en0",
+      "awdl0",
+      "llw0",
+      "utun0",
+      "utun1",
+      "utun2",
+      "utun3",
+      "utun4"
+    ],
+    "timestamp": "2025-07-24T16:33:36.4632+05:30"
+  },
+  "timestamp": "2025-07-24T16:33:36.4632+05:30"
+}
+
+INDIVIDUAL RESOURCE DETAILS:
+
+SYSTEM INFORMATION:
+{
+  "hostname": "JHMH32WDGT",
+  "platform": "darwin",
+  "os": "darwin",
+  "architecture": "arm64",
+  "uptime": 709803,
+  "boot_time": "2025-07-16T11:23:33+05:30"
+}
+
+CPU INFORMATION:
+{
+  "usage_percent": 12.903225816142793,
+  "core_count": 14,
+  "model_name": "Apple M4 Pro",
+  "timestamp": "2025-07-24T16:33:36.511427+05:30"
+}
+
+MEMORY INFORMATION:
+{
+  "total": 25769803776,
+  "used": 16395616256,
+  "free": 275398656,
+  "usage_percent": 63.623364766438804,
+  "timestamp": "2025-07-24T16:33:36.523092+05:30"
+}
+
+DISK INFORMATION:
+{
+  "total": 494384795648,
+  "used": 158651441152,
+  "free": 335733354496,
+  "usage_percent": 32.09067967878187,
+  "mount_point": "/",
+  "timestamp": "2025-07-24T16:33:36.533116+05:30"
+}
+
+NETWORK INFORMATION:
+{
+  "ip_addresses": [
+    "10.120.16.246",
+    "10.255.24.113"
+  ],
+  "interfaces": [
+    "anpi1",
+    "anpi2",
+    "anpi0",
+    "en4",
+    "en5",
+    "en6",
+    "en1",
+    "en2",
+    "en3",
+    "bridge0",
+    "ap1",
+    "en0",
+    "awdl0",
+    "llw0",
+    "utun0",
+    "utun1",
+    "utun2",
+    "utun3",
+    "utun4"
+  ],
+  "timestamp": "2025-07-24T16:33:36.543809+05:30"
+}
+
+===============================================
+CAPTURE COMPLETE
+===============================================

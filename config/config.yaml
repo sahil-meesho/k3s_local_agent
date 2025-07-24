@@ -1,0 +1,7 @@
+server:
+  port: "8081"
+  host: "localhost"
+
+monitor:
+  enabled: true 
+

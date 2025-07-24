@@ -1,0 +1,2098 @@
+K3s LOCAL AGENT - Capture REPORT
+=====================================
+Generated: Thu Jul 24 22:37:07 IST 2025
+Mode: Capture
+Namespace: default
+Control Plane: https://httpbin.org/post
+Agent ID: JHMH32WDGT-1753376826
+Output File: reports/k3s_agent_20250724_223706.txt
+Log File: logs/k3s_agent.log
+
+TIMESTAMP: 2025-07-24 22:37:07
+===============================================
+
+=== K3s Resource Summary ===
+Timestamp: 2025-07-24 22:37:09
+
+Local System:
+  Hostname: JHMH32WDGT
+  CPU Usage: 15.56%
+  Memory Usage: 72.92%
+  Online: true
+  Internet: true
+
+Cluster Health:
+  Total Nodes: 154
+  Ready Nodes: 154
+  Total Pods: 3167
+  Running Pods: 3060
+  Node Health: 100.00%
+  Pod Health: 96.62%
+
+Node Metrics:
+  gke-k8s-central-stg--np-central-defau-b8595b8d-1ynq:
+    CPU Available: 2933481585n / 4
+    Memory Available: -54236Ki / 8140260Ki
+  gke-k8s-central-stg--np-central-defau-b8595b8d-e1p8:
+    CPU Available: 2379781177n / 4
+    Memory Available: 1724728Ki / 8140252Ki
+  gke-k8s-central-stg--np-central-defau-b8595b8d-lku9:
+    CPU Available: 2671935667n / 4
+    Memory Available: 828284Ki / 8140260Ki
+  gke-k8s-central-stg--np-central-defau-b8595b8d-m4xm:
+    CPU Available: 811220729n / 4
+    Memory Available: 1621028Ki / 8140260Ki
+  gke-k8s-central-stg--np-central-defau-b8595b8d-qh7y:
+    CPU Available: 3387424800n / 4
+    Memory Available: 2766884Ki / 8140260Ki
+  gke-k8s-central-stg--np-central-defau-b8595b8d-v6kk:
+    CPU Available: 2949803340n / 4
+    Memory Available: 2786280Ki / 8140260Ki
+  gke-k8s-central-stg--np-cntr-dev-ase1-eeab4dea-8lb4:
+    CPU Available: 4728900116n / 6
+    Memory Available: 4577736Ki / 12256244Ki
+  gke-k8s-central-stg--np-cntr-dev-ase1-eeab4dea-ax69:
+    CPU Available: 5414839015n / 6
+    Memory Available: 6598268Ki / 12256236Ki
+  gke-k8s-central-stg--np-cntr-dev-ase1-eeab4dea-iv1z:
+    CPU Available: 5159792723n / 6
+    Memory Available: 5273220Ki / 12256244Ki
+  gke-k8s-central-stg--np-cntr-dev-ase1-eeab4dea-k770:
+    CPU Available: 5625064027n / 6
+    Memory Available: 6401028Ki / 12256236Ki
+  gke-k8s-central-stg--np-cntr-dev-ase1-eeab4dea-lbn8:
+    CPU Available: 5455268498n / 6
+    Memory Available: 6834548Ki / 12256244Ki
+  gke-k8s-central-stg--np-cntr-xcntr-au-5d0fb028-xvdk:
+    CPU Available: 15461989094n / 16
+    Memory Available: 53474684Ki / 65853980Ki
+  gke-k8s-central-stg--np-cntr-xcntr-sp-00d88d96-5d5z:
+    CPU Available: 14351991026n / 16
+    Memory Available: 56471148Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-sp-00d88d96-7hgv:
+    CPU Available: 15103090764n / 16
+    Memory Available: 55274760Ki / 65853952Ki
+  gke-k8s-central-stg--np-cntr-xcntr-sp-00d88d96-cd4v:
+    CPU Available: 15624146504n / 16
+    Memory Available: 52819636Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-sp-00d88d96-czsg:
+    CPU Available: 15822324576n / 16
+    Memory Available: 57793164Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-sp-00d88d96-dcdw:
+    CPU Available: 15743209637n / 16
+    Memory Available: 54634828Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-sp-00d88d96-djq8:
+    CPU Available: 15744511604n / 16
+    Memory Available: 54803572Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-sp-00d88d96-gctf:
+    CPU Available: 15771376788n / 16
+    Memory Available: 56038960Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-sp-00d88d96-gdt2:
+    CPU Available: 15762191198n / 16
+    Memory Available: 54804212Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-sp-00d88d96-gs9r:
+    CPU Available: 15821408423n / 16
+    Memory Available: 57833416Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-sp-00d88d96-gvk4:
+    CPU Available: 15832896103n / 16
+    Memory Available: 57916908Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-sp-00d88d96-kvml:
+    CPU Available: 15784076957n / 16
+    Memory Available: 57187140Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-sp-00d88d96-kwbs:
+    CPU Available: 15819923172n / 16
+    Memory Available: 57480120Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-sp-00d88d96-lgv4:
+    CPU Available: 15833555630n / 16
+    Memory Available: 57923104Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-sp-00d88d96-m5p6:
+    CPU Available: 15744739502n / 16
+    Memory Available: 57299428Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-sp-00d88d96-mnvv:
+    CPU Available: 15050866820n / 16
+    Memory Available: 56422680Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-sp-00d88d96-pfs2:
+    CPU Available: 15805341628n / 16
+    Memory Available: 57726116Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-sp-00d88d96-smgg:
+    CPU Available: 15837561057n / 16
+    Memory Available: 57935624Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-sp-00d88d96-tzvg:
+    CPU Available: 15160840264n / 16
+    Memory Available: 56794316Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-sp-00d88d96-w8pc:
+    CPU Available: 15633591449n / 16
+    Memory Available: 35512592Ki / 65853980Ki
+  gke-k8s-central-stg--np-cntr-xcntr-sp-7bd87fcc-2x68:
+    CPU Available: 15623953489n / 16
+    Memory Available: 52338608Ki / 65858880Ki
+  gke-k8s-central-stg--np-cntr-xcntr-sp-7bd87fcc-4ksq:
+    CPU Available: 14300922024n / 16
+    Memory Available: 54137980Ki / 65858880Ki
+  gke-k8s-central-stg--np-cntr-xcntr-sp-7bd87fcc-5s4k:
+    CPU Available: 15740530377n / 16
+    Memory Available: 53576068Ki / 65858880Ki
+  gke-k8s-central-stg--np-cntr-xcntr-sp-7bd87fcc-6jv2:
+    CPU Available: 15819702576n / 16
+    Memory Available: 56800224Ki / 65858880Ki
+  gke-k8s-central-stg--np-cntr-xcntr-sp-7bd87fcc-88ps:
+    CPU Available: 15782914172n / 16
+    Memory Available: 55123424Ki / 65858880Ki
+  gke-k8s-central-stg--np-cntr-xcntr-sp-7bd87fcc-9t89:
+    CPU Available: 15689168607n / 16
+    Memory Available: 53442008Ki / 65858880Ki
+  gke-k8s-central-stg--np-cntr-xcntr-sp-7bd87fcc-d5ds:
+    CPU Available: 15782469900n / 16
+    Memory Available: 55525880Ki / 65858880Ki
+  gke-k8s-central-stg--np-cntr-xcntr-sp-7bd87fcc-drtn:
+    CPU Available: 15312697205n / 16
+    Memory Available: 50154280Ki / 65858884Ki
+  gke-k8s-central-stg--np-cntr-xcntr-sp-7bd87fcc-f27n:
+    CPU Available: 15810234175n / 16
+    Memory Available: 56681952Ki / 65858880Ki
+  gke-k8s-central-stg--np-cntr-xcntr-sp-7bd87fcc-jlc7:
+    CPU Available: 15834786297n / 16
+    Memory Available: 56805288Ki / 65858880Ki
+  gke-k8s-central-stg--np-cntr-xcntr-sp-7bd87fcc-ksnp:
+    CPU Available: 15791992748n / 16
+    Memory Available: 56476224Ki / 65858880Ki
+  gke-k8s-central-stg--np-cntr-xcntr-sp-7bd87fcc-qpqq:
+    CPU Available: 15799674630n / 16
+    Memory Available: 56671608Ki / 65858880Ki
+  gke-k8s-central-stg--np-cntr-xcntr-sp-7bd87fcc-vht6:
+    CPU Available: 15082390835n / 16
+    Memory Available: 56647880Ki / 65858880Ki
+  gke-k8s-central-stg--np-cntr-xcntr-sp-7bd87fcc-xg47:
+    CPU Available: 15717618906n / 16
+    Memory Available: 54655504Ki / 65858880Ki
+  gke-k8s-central-stg--np-cntr-xcntr-sp-7bd87fcc-xq4c:
+    CPU Available: 15768482612n / 16
+    Memory Available: 53606312Ki / 65858880Ki
+  gke-k8s-central-stg--np-cntr-xcntr-to-130b46b9-jdc6:
+    CPU Available: 15776934590n / 16
+    Memory Available: 37169908Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-2dps:
+    CPU Available: 15756197184n / 16
+    Memory Available: 34750420Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-2kjn:
+    CPU Available: 15782777686n / 16
+    Memory Available: 37289448Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-2trm:
+    CPU Available: 15800794379n / 16
+    Memory Available: 46796032Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-47rj:
+    CPU Available: 14704074025n / 16
+    Memory Available: 51481880Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-4vvr:
+    CPU Available: 15752418225n / 16
+    Memory Available: 27711216Ki / 65853980Ki
+  gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-5fcs:
+    CPU Available: 15815935776n / 16
+    Memory Available: 49380156Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-5frl:
+    CPU Available: 15728642177n / 16
+    Memory Available: 40064340Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-5mwh:
+    CPU Available: 15761552928n / 16
+    Memory Available: 39585120Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-5r24:
+    CPU Available: 13915394191n / 16
+    Memory Available: 47961172Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-5x8c:
+    CPU Available: 15434609974n / 16
+    Memory Available: 36513752Ki / 65853952Ki
+  gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-5zl8:
+    CPU Available: 15733725100n / 16
+    Memory Available: 33024236Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-6cfd:
+    CPU Available: 15807783617n / 16
+    Memory Available: 51941820Ki / 65853980Ki
+  gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-6ks9:
+    CPU Available: 14881044777n / 16
+    Memory Available: 28755808Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-6rm5:
+    CPU Available: 15758930425n / 16
+    Memory Available: 47621768Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-774l:
+    CPU Available: 15830448467n / 16
+    Memory Available: 49271848Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-789g:
+    CPU Available: 15833814245n / 16
+    Memory Available: 51844048Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-7nnz:
+    CPU Available: 14706725537n / 16
+    Memory Available: 27093332Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-7pk9:
+    CPU Available: 14963099416n / 16
+    Memory Available: 47830848Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-84jw:
+    CPU Available: 15116043085n / 16
+    Memory Available: 37402164Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-8p4t:
+    CPU Available: 15785496095n / 16
+    Memory Available: 48117480Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-8zjm:
+    CPU Available: 15817091303n / 16
+    Memory Available: 50821036Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-92q9:
+    CPU Available: 15629777815n / 16
+    Memory Available: 23091736Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-9ctg:
+    CPU Available: 12425383697n / 16
+    Memory Available: 38192068Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-9jxr:
+    CPU Available: 15787902889n / 16
+    Memory Available: 45906848Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-9kfp:
+    CPU Available: 15757938932n / 16
+    Memory Available: 34782232Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-b4lq:
+    CPU Available: 14100475685n / 16
+    Memory Available: 38266048Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-b65x:
+    CPU Available: 15709458276n / 16
+    Memory Available: 35616332Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-bfm7:
+    CPU Available: 15830732365n / 16
+    Memory Available: 53736028Ki / 65853952Ki
+  gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-br4v:
+    CPU Available: 15460816022n / 16
+    Memory Available: 44499140Ki / 65853980Ki
+  gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-brll:
+    CPU Available: 15797430166n / 16
+    Memory Available: 42507420Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-c4lx:
+    CPU Available: 12787849463n / 16
+    Memory Available: 34286924Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-c88w:
+    CPU Available: 15780195297n / 16
+    Memory Available: 39956392Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-cnpm:
+    CPU Available: 14365479957n / 16
+    Memory Available: 26868672Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-cnqc:
+    CPU Available: 15773250250n / 16
+    Memory Available: 42670544Ki / 65853952Ki
+  gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-d22c:
+    CPU Available: 15698416023n / 16
+    Memory Available: 33082864Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-dgsr:
+    CPU Available: 15546009041n / 16
+    Memory Available: 43366Mi / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-djc4:
+    CPU Available: 15287088154n / 16
+    Memory Available: 45481008Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-dmm8:
+    CPU Available: 15015729443n / 16
+    Memory Available: 39495704Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-dq79:
+    CPU Available: 14786834080n / 16
+    Memory Available: 25746680Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-f4dn:
+    CPU Available: 15484566979n / 16
+    Memory Available: 43131260Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-f8tb:
+    CPU Available: 15430166113n / 16
+    Memory Available: 37542716Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-fkdz:
+    CPU Available: 14227379768n / 16
+    Memory Available: 29502496Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-fp4x:
+    CPU Available: 15721149879n / 16
+    Memory Available: 31419288Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-fvqq:
+    CPU Available: 15750386378n / 16
+    Memory Available: 40066204Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-gcjv:
+    CPU Available: 15064683966n / 16
+    Memory Available: 55580568Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-ghdt:
+    CPU Available: 15789953467n / 16
+    Memory Available: 47301812Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-gll7:
+    CPU Available: 15729537742n / 16
+    Memory Available: 43250328Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-j9b2:
+    CPU Available: 15827202886n / 16
+    Memory Available: 50692988Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-khmb:
+    CPU Available: 15784173564n / 16
+    Memory Available: 39064140Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-knw6:
+    CPU Available: 15518633118n / 16
+    Memory Available: 39710936Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-kp7n:
+    CPU Available: 12752311859n / 16
+    Memory Available: 39366940Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-ks7z:
+    CPU Available: 13420350802n / 16
+    Memory Available: 37772836Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-ksv8:
+    CPU Available: 15803579837n / 16
+    Memory Available: 52292896Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-ktns:
+    CPU Available: 15536332149n / 16
+    Memory Available: 36075432Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-kvpl:
+    CPU Available: 13458117675n / 16
+    Memory Available: 42358808Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-lc8v:
+    CPU Available: 15772513117n / 16
+    Memory Available: 34683124Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-ldn7:
+    CPU Available: 15770304138n / 16
+    Memory Available: 42596416Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-ltzl:
+    CPU Available: 15786346532n / 16
+    Memory Available: 48388560Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-lwqp:
+    CPU Available: 15733780103n / 16
+    Memory Available: 29174140Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-mxds:
+    CPU Available: 15772776948n / 16
+    Memory Available: 42260092Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-n82v:
+    CPU Available: 15787492111n / 16
+    Memory Available: 48102084Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-nvch:
+    CPU Available: 15462182398n / 16
+    Memory Available: 28413236Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-q5jn:
+    CPU Available: 15828075760n / 16
+    Memory Available: 56463968Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-q86m:
+    CPU Available: 15792451176n / 16
+    Memory Available: 41081604Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-qppp:
+    CPU Available: 15641661130n / 16
+    Memory Available: 53980344Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-r25k:
+    CPU Available: 15488799018n / 16
+    Memory Available: 30826676Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-rd54:
+    CPU Available: 15638589633n / 16
+    Memory Available: 24675372Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-rd7g:
+    CPU Available: 15582654918n / 16
+    Memory Available: 45483828Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-rxtm:
+    CPU Available: 15726601742n / 16
+    Memory Available: 44887168Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-s2x6:
+    CPU Available: 14511476243n / 16
+    Memory Available: 33905780Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-sdgp:
+    CPU Available: 14542776394n / 16
+    Memory Available: 47603032Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-t9vt:
+    CPU Available: 15775109776n / 16
+    Memory Available: 44794456Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-tjs5:
+    CPU Available: 15415229739n / 16
+    Memory Available: 32972080Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-tnvt:
+    CPU Available: 11941947622n / 16
+    Memory Available: 37673468Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-vrxx:
+    CPU Available: 14760040540n / 16
+    Memory Available: 47327660Ki / 65853952Ki
+  gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-w6dh:
+    CPU Available: 15798909575n / 16
+    Memory Available: 44389928Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-w72g:
+    CPU Available: 15823147170n / 16
+    Memory Available: 47251828Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-w7br:
+    CPU Available: 15756259177n / 16
+    Memory Available: 37016428Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-wt72:
+    CPU Available: 15747859588n / 16
+    Memory Available: 30455520Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-wtnh:
+    CPU Available: 13520059149n / 16
+    Memory Available: 47018240Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-x467:
+    CPU Available: 15781040761n / 16
+    Memory Available: 44688892Ki / 65853952Ki
+  gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-xcmw:
+    CPU Available: 15770204869n / 16
+    Memory Available: 41470200Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-xkgx:
+    CPU Available: 15776019147n / 16
+    Memory Available: 44290556Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-xmkw:
+    CPU Available: 14478082902n / 16
+    Memory Available: 37677288Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-xnq5:
+    CPU Available: 15811064877n / 16
+    Memory Available: 50544384Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-xrx6:
+    CPU Available: 15100258965n / 16
+    Memory Available: 43847068Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-z2k6:
+    CPU Available: 15769937544n / 16
+    Memory Available: 34725468Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-to-97e1476d-h96j:
+    CPU Available: 14808246092n / 16
+    Memory Available: 35893116Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-to-97e1476d-jqjb:
+    CPU Available: 15657341521n / 16
+    Memory Available: 24764592Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-to-97e1476d-wq97:
+    CPU Available: 14731463820n / 16
+    Memory Available: 41627304Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-to-97e1476d-z8ql:
+    CPU Available: 15274053884n / 16
+    Memory Available: 27625208Ki / 65853960Ki
+  gke-k8s-central-stg--np-cntr-xcntr-to-97e1476d-zw9d:
+    CPU Available: 15237429217n / 16
+    Memory Available: 30985084Ki / 65853960Ki
+  gke-k8s-central-stg--np-infr-sre-shar-3d7afb63-hrw7:
+    CPU Available: 6673147437n / 8
+    Memory Available: 29710324Ki / 65860796Ki
+  gke-k8s-central-stg--np-infr-sre-shar-3d7afb63-ltgh:
+    CPU Available: 5393989781n / 8
+    Memory Available: 32878140Ki / 65860800Ki
+  gke-k8s-central-stg--np-infr-sre-shar-3d7afb63-mvvj:
+    CPU Available: 7248433516n / 8
+    Memory Available: 50010240Ki / 65860800Ki
+  gke-k8s-central-stg--np-infr-sre-shar-3d7afb63-v4zw:
+    CPU Available: 6697129451n / 8
+    Memory Available: 33407084Ki / 65860796Ki
+  gke-k8s-central-stg--np-infr-sre-vmag-29805a41-2qzz:
+    CPU Available: 14948960461n / 16
+    Memory Available: 108584068Ki / 131919124Ki
+  gke-k8s-central-stg--np-infr-sre-vmag-29805a41-nvxn:
+    CPU Available: 14822404576n / 16
+    Memory Available: 108604296Ki / 131919124Ki
+  gke-k8s-central-stg--np-infr-sre-vmin-1d70e3e7-ndfn:
+    CPU Available: 3075076658n / 4
+    Memory Available: 26713812Ki / 32880776Ki
+  gke-k8s-central-stg--np-infr-sre-vmin-1d70e3e7-nxfc:
+    CPU Available: 2977982579n / 4
+    Memory Available: 26273676Ki / 32880776Ki
+  gke-k8s-central-stg--np-infr-sre-vmsl-4189b2db-4wp4:
+    CPU Available: 12380877065n / 16
+    Memory Available: 118332508Ki / 131919120Ki
+  gke-k8s-central-stg--np-infr-sre-vmsl-4189b2db-r5xl:
+    CPU Available: 13219097925n / 16
+    Memory Available: 119064952Ki / 131919120Ki
+  gke-k8s-central-stg--np-infr-sre-vmst-bba5fd77-f8ft:
+    CPU Available: 15272629811n / 16
+    Memory Available: 91807584Ki / 131919132Ki
+  gke-k8s-central-stg--np-infr-sre-vmst-bba5fd77-kuys:
+    CPU Available: 15225362609n / 16
+    Memory Available: 91868240Ki / 131919132Ki
+  gke-k8s-central-stg--np-infr-sre-vmst-bba5fd77-qyjj:
+    CPU Available: 15311520040n / 16
+    Memory Available: 91824472Ki / 131919132Ki
+  gke-k8s-central-stg--np-infr-sre-vmst-bba5fd77-vgwj:
+    CPU Available: 15213768993n / 16
+    Memory Available: 92073076Ki / 131919132Ki
+  gke-k8s-central-stg--np-infr-sre-vmst-bba5fd77-ybpv:
+    CPU Available: 15217923374n / 16
+    Memory Available: 91555360Ki / 131919132Ki
+
+
+JSON DATA:
+==========
+{
+  "cluster_health": {
+    "node_health": 100,
+    "pod_health": 96.6214082728134,
+    "ready_nodes": 154,
+    "running_pods": 3060,
+    "timestamp": "2025-07-24T22:37:10.151619+05:30",
+    "total_nodes": 154,
+    "total_pods": 3167
+  },
+  "local_system": {
+    "cpu": {
+      "core_count": 14,
+      "model_name": "Apple M4 Pro",
+      "timestamp": "2025-07-24T22:37:09.51851+05:30",
+      "usage_percent": 13.661858974721486
+    },
+    "health": {
+      "has_internet": true,
+      "is_healthy": true,
+      "is_online": true,
+      "timestamp": "2025-07-24T22:37:09.518634+05:30"
+    },
+    "memory": {
+      "available": 6737068032,
+      "free": 218644480,
+      "timestamp": "2025-07-24T22:37:09.518532+05:30",
+      "total": 25769803776,
+      "used": 19032735744,
+      "used_percent": 73.85673522949219
+    },
+    "system": {
+      "architecture": "arm64",
+      "boot_time": "2025-07-16T11:23:33+05:30",
+      "hostname": "JHMH32WDGT",
+      "os": "darwin",
+      "platform": "darwin",
+      "uptime": 731616
+    },
+    "timestamp": "2025-07-24T22:37:09.533775+05:30",
+    "vpn": {
+      "interface": "utun4",
+      "ip_address": "10.255.23.12",
+      "is_connected": true,
+      "timestamp": "2025-07-24T22:37:09.51861+05:30"
+    }
+  },
+  "node_metrics": [
+    {
+      "cpu_available": "2933481585n",
+      "cpu_capacity": "4",
+      "cpu_usage": "986518415n",
+      "memory_available": "-54236Ki",
+      "memory_capacity": "8140260Ki",
+      "memory_usage": "6229440Ki",
+      "name": "gke-k8s-central-stg--np-central-defau-b8595b8d-1ynq",
+      "timestamp": "2025-07-24T22:37:10.424893+05:30"
+    },
+    {
+      "cpu_available": "2379781177n",
+      "cpu_capacity": "4",
+      "cpu_usage": "1540218823n",
+      "memory_available": "1724728Ki",
+      "memory_capacity": "8140252Ki",
+      "memory_usage": "4450468Ki",
+      "name": "gke-k8s-central-stg--np-central-defau-b8595b8d-e1p8",
+      "timestamp": "2025-07-24T22:37:10.4249+05:30"
+    },
+    {
+      "cpu_available": "2671935667n",
+      "cpu_capacity": "4",
+      "cpu_usage": "1248064333n",
+      "memory_available": "828284Ki",
+      "memory_capacity": "8140260Ki",
+      "memory_usage": "5346920Ki",
+      "name": "gke-k8s-central-stg--np-central-defau-b8595b8d-lku9",
+      "timestamp": "2025-07-24T22:37:10.424901+05:30"
+    },
+    {
+      "cpu_available": "811220729n",
+      "cpu_capacity": "4",
+      "cpu_usage": "3108779271n",
+      "memory_available": "1621028Ki",
+      "memory_capacity": "8140260Ki",
+      "memory_usage": "4554176Ki",
+      "name": "gke-k8s-central-stg--np-central-defau-b8595b8d-m4xm",
+      "timestamp": "2025-07-24T22:37:10.424903+05:30"
+    },
+    {
+      "cpu_available": "3387424800n",
+      "cpu_capacity": "4",
+      "cpu_usage": "532575200n",
+      "memory_available": "2766884Ki",
+      "memory_capacity": "8140260Ki",
+      "memory_usage": "3408320Ki",
+      "name": "gke-k8s-central-stg--np-central-defau-b8595b8d-qh7y",
+      "timestamp": "2025-07-24T22:37:10.424903+05:30"
+    },
+    {
+      "cpu_available": "2949803340n",
+      "cpu_capacity": "4",
+      "cpu_usage": "970196660n",
+      "memory_available": "2786280Ki",
+      "memory_capacity": "8140260Ki",
+      "memory_usage": "3388924Ki",
+      "name": "gke-k8s-central-stg--np-central-defau-b8595b8d-v6kk",
+      "timestamp": "2025-07-24T22:37:10.42491+05:30"
+    },
+    {
+      "cpu_available": "4728900116n",
+      "cpu_capacity": "6",
+      "cpu_usage": "1186099884n",
+      "memory_available": "4577736Ki",
+      "memory_capacity": "12256244Ki",
+      "memory_usage": "5294636Ki",
+      "name": "gke-k8s-central-stg--np-cntr-dev-ase1-eeab4dea-8lb4",
+      "timestamp": "2025-07-24T22:37:10.42491+05:30"
+    },
+    {
+      "cpu_available": "5414839015n",
+      "cpu_capacity": "6",
+      "cpu_usage": "500160985n",
+      "memory_available": "6598268Ki",
+      "memory_capacity": "12256236Ki",
+      "memory_usage": "3274096Ki",
+      "name": "gke-k8s-central-stg--np-cntr-dev-ase1-eeab4dea-ax69",
+      "timestamp": "2025-07-24T22:37:10.424911+05:30"
+    },
+    {
+      "cpu_available": "5159792723n",
+      "cpu_capacity": "6",
+      "cpu_usage": "755207277n",
+      "memory_available": "5273220Ki",
+      "memory_capacity": "12256244Ki",
+      "memory_usage": "4599152Ki",
+      "name": "gke-k8s-central-stg--np-cntr-dev-ase1-eeab4dea-iv1z",
+      "timestamp": "2025-07-24T22:37:10.424911+05:30"
+    },
+    {
+      "cpu_available": "5625064027n",
+      "cpu_capacity": "6",
+      "cpu_usage": "289935973n",
+      "memory_available": "6401028Ki",
+      "memory_capacity": "12256236Ki",
+      "memory_usage": "3471336Ki",
+      "name": "gke-k8s-central-stg--np-cntr-dev-ase1-eeab4dea-k770",
+      "timestamp": "2025-07-24T22:37:10.424916+05:30"
+    },
+    {
+      "cpu_available": "5455268498n",
+      "cpu_capacity": "6",
+      "cpu_usage": "459731502n",
+      "memory_available": "6834548Ki",
+      "memory_capacity": "12256244Ki",
+      "memory_usage": "3037824Ki",
+      "name": "gke-k8s-central-stg--np-cntr-dev-ase1-eeab4dea-lbn8",
+      "timestamp": "2025-07-24T22:37:10.424916+05:30"
+    },
+    {
+      "cpu_available": "15461989094n",
+      "cpu_capacity": "16",
+      "cpu_usage": "428010906n",
+      "memory_available": "53474684Ki",
+      "memory_capacity": "65853980Ki",
+      "memory_usage": "6571168Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-au-5d0fb028-xvdk",
+      "timestamp": "2025-07-24T22:37:10.424917+05:30"
+    },
+    {
+      "cpu_available": "14351991026n",
+      "cpu_capacity": "16",
+      "cpu_usage": "1538008974n",
+      "memory_available": "56471148Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "3574684Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-sp-00d88d96-5d5z",
+      "timestamp": "2025-07-24T22:37:10.424917+05:30"
+    },
+    {
+      "cpu_available": "15103090764n",
+      "cpu_capacity": "16",
+      "cpu_usage": "786909236n",
+      "memory_available": "55274760Ki",
+      "memory_capacity": "65853952Ki",
+      "memory_usage": "4771064Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-sp-00d88d96-7hgv",
+      "timestamp": "2025-07-24T22:37:10.424918+05:30"
+    },
+    {
+      "cpu_available": "15624146504n",
+      "cpu_capacity": "16",
+      "cpu_usage": "265853496n",
+      "memory_available": "52819636Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "7226196Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-sp-00d88d96-cd4v",
+      "timestamp": "2025-07-24T22:37:10.424919+05:30"
+    },
+    {
+      "cpu_available": "15822324576n",
+      "cpu_capacity": "16",
+      "cpu_usage": "67675424n",
+      "memory_available": "57793164Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "2252668Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-sp-00d88d96-czsg",
+      "timestamp": "2025-07-24T22:37:10.424919+05:30"
+    },
+    {
+      "cpu_available": "15743209637n",
+      "cpu_capacity": "16",
+      "cpu_usage": "146790363n",
+      "memory_available": "54634828Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "5411004Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-sp-00d88d96-dcdw",
+      "timestamp": "2025-07-24T22:37:10.424919+05:30"
+    },
+    {
+      "cpu_available": "15744511604n",
+      "cpu_capacity": "16",
+      "cpu_usage": "145488396n",
+      "memory_available": "54803572Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "5242260Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-sp-00d88d96-djq8",
+      "timestamp": "2025-07-24T22:37:10.424925+05:30"
+    },
+    {
+      "cpu_available": "15771376788n",
+      "cpu_capacity": "16",
+      "cpu_usage": "118623212n",
+      "memory_available": "56038960Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "4006872Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-sp-00d88d96-gctf",
+      "timestamp": "2025-07-24T22:37:10.424925+05:30"
+    },
+    {
+      "cpu_available": "15762191198n",
+      "cpu_capacity": "16",
+      "cpu_usage": "127808802n",
+      "memory_available": "54804212Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "5241620Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-sp-00d88d96-gdt2",
+      "timestamp": "2025-07-24T22:37:10.424926+05:30"
+    },
+    {
+      "cpu_available": "15821408423n",
+      "cpu_capacity": "16",
+      "cpu_usage": "68591577n",
+      "memory_available": "57833416Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "2212416Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-sp-00d88d96-gs9r",
+      "timestamp": "2025-07-24T22:37:10.424927+05:30"
+    },
+    {
+      "cpu_available": "15832896103n",
+      "cpu_capacity": "16",
+      "cpu_usage": "57103897n",
+      "memory_available": "57916908Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "2128924Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-sp-00d88d96-gvk4",
+      "timestamp": "2025-07-24T22:37:10.424927+05:30"
+    },
+    {
+      "cpu_available": "15784076957n",
+      "cpu_capacity": "16",
+      "cpu_usage": "105923043n",
+      "memory_available": "57187140Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "2858692Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-sp-00d88d96-kvml",
+      "timestamp": "2025-07-24T22:37:10.424927+05:30"
+    },
+    {
+      "cpu_available": "15819923172n",
+      "cpu_capacity": "16",
+      "cpu_usage": "70076828n",
+      "memory_available": "57480120Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "2565712Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-sp-00d88d96-kwbs",
+      "timestamp": "2025-07-24T22:37:10.424928+05:30"
+    },
+    {
+      "cpu_available": "15833555630n",
+      "cpu_capacity": "16",
+      "cpu_usage": "56444370n",
+      "memory_available": "57923104Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "2122728Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-sp-00d88d96-lgv4",
+      "timestamp": "2025-07-24T22:37:10.424928+05:30"
+    },
+    {
+      "cpu_available": "15744739502n",
+      "cpu_capacity": "16",
+      "cpu_usage": "145260498n",
+      "memory_available": "57299428Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "2746404Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-sp-00d88d96-m5p6",
+      "timestamp": "2025-07-24T22:37:10.424929+05:30"
+    },
+    {
+      "cpu_available": "15050866820n",
+      "cpu_capacity": "16",
+      "cpu_usage": "839133180n",
+      "memory_available": "56422680Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "3623152Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-sp-00d88d96-mnvv",
+      "timestamp": "2025-07-24T22:37:10.424929+05:30"
+    },
+    {
+      "cpu_available": "15805341628n",
+      "cpu_capacity": "16",
+      "cpu_usage": "84658372n",
+      "memory_available": "57726116Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "2319716Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-sp-00d88d96-pfs2",
+      "timestamp": "2025-07-24T22:37:10.42493+05:30"
+    },
+    {
+      "cpu_available": "15837561057n",
+      "cpu_capacity": "16",
+      "cpu_usage": "52438943n",
+      "memory_available": "57935624Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "2110208Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-sp-00d88d96-smgg",
+      "timestamp": "2025-07-24T22:37:10.42493+05:30"
+    },
+    {
+      "cpu_available": "15160840264n",
+      "cpu_capacity": "16",
+      "cpu_usage": "729159736n",
+      "memory_available": "56794316Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "3251516Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-sp-00d88d96-tzvg",
+      "timestamp": "2025-07-24T22:37:10.424931+05:30"
+    },
+    {
+      "cpu_available": "15633591449n",
+      "cpu_capacity": "16",
+      "cpu_usage": "256408551n",
+      "memory_available": "35512592Ki",
+      "memory_capacity": "65853980Ki",
+      "memory_usage": "24533260Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-sp-00d88d96-w8pc",
+      "timestamp": "2025-07-24T22:37:10.424932+05:30"
+    },
+    {
+      "cpu_available": "15623953489n",
+      "cpu_capacity": "16",
+      "cpu_usage": "266046511n",
+      "memory_available": "52338608Ki",
+      "memory_capacity": "65858880Ki",
+      "memory_usage": "7712144Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-sp-7bd87fcc-2x68",
+      "timestamp": "2025-07-24T22:37:10.424932+05:30"
+    },
+    {
+      "cpu_available": "14300922024n",
+      "cpu_capacity": "16",
+      "cpu_usage": "1589077976n",
+      "memory_available": "54137980Ki",
+      "memory_capacity": "65858880Ki",
+      "memory_usage": "5912772Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-sp-7bd87fcc-4ksq",
+      "timestamp": "2025-07-24T22:37:10.424932+05:30"
+    },
+    {
+      "cpu_available": "15740530377n",
+      "cpu_capacity": "16",
+      "cpu_usage": "149469623n",
+      "memory_available": "53576068Ki",
+      "memory_capacity": "65858880Ki",
+      "memory_usage": "6474684Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-sp-7bd87fcc-5s4k",
+      "timestamp": "2025-07-24T22:37:10.42494+05:30"
+    },
+    {
+      "cpu_available": "15819702576n",
+      "cpu_capacity": "16",
+      "cpu_usage": "70297424n",
+      "memory_available": "56800224Ki",
+      "memory_capacity": "65858880Ki",
+      "memory_usage": "3250528Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-sp-7bd87fcc-6jv2",
+      "timestamp": "2025-07-24T22:37:10.42494+05:30"
+    },
+    {
+      "cpu_available": "15782914172n",
+      "cpu_capacity": "16",
+      "cpu_usage": "107085828n",
+      "memory_available": "55123424Ki",
+      "memory_capacity": "65858880Ki",
+      "memory_usage": "4927328Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-sp-7bd87fcc-88ps",
+      "timestamp": "2025-07-24T22:37:10.42494+05:30"
+    },
+    {
+      "cpu_available": "15689168607n",
+      "cpu_capacity": "16",
+      "cpu_usage": "200831393n",
+      "memory_available": "53442008Ki",
+      "memory_capacity": "65858880Ki",
+      "memory_usage": "6608744Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-sp-7bd87fcc-9t89",
+      "timestamp": "2025-07-24T22:37:10.424943+05:30"
+    },
+    {
+      "cpu_available": "15782469900n",
+      "cpu_capacity": "16",
+      "cpu_usage": "107530100n",
+      "memory_available": "55525880Ki",
+      "memory_capacity": "65858880Ki",
+      "memory_usage": "4524872Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-sp-7bd87fcc-d5ds",
+      "timestamp": "2025-07-24T22:37:10.424945+05:30"
+    },
+    {
+      "cpu_available": "15312697205n",
+      "cpu_capacity": "16",
+      "cpu_usage": "577302795n",
+      "memory_available": "50154280Ki",
+      "memory_capacity": "65858884Ki",
+      "memory_usage": "9896476Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-sp-7bd87fcc-drtn",
+      "timestamp": "2025-07-24T22:37:10.424945+05:30"
+    },
+    {
+      "cpu_available": "15810234175n",
+      "cpu_capacity": "16",
+      "cpu_usage": "79765825n",
+      "memory_available": "56681952Ki",
+      "memory_capacity": "65858880Ki",
+      "memory_usage": "3368800Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-sp-7bd87fcc-f27n",
+      "timestamp": "2025-07-24T22:37:10.424946+05:30"
+    },
+    {
+      "cpu_available": "15834786297n",
+      "cpu_capacity": "16",
+      "cpu_usage": "55213703n",
+      "memory_available": "56805288Ki",
+      "memory_capacity": "65858880Ki",
+      "memory_usage": "3245464Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-sp-7bd87fcc-jlc7",
+      "timestamp": "2025-07-24T22:37:10.424946+05:30"
+    },
+    {
+      "cpu_available": "15791992748n",
+      "cpu_capacity": "16",
+      "cpu_usage": "98007252n",
+      "memory_available": "56476224Ki",
+      "memory_capacity": "65858880Ki",
+      "memory_usage": "3574528Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-sp-7bd87fcc-ksnp",
+      "timestamp": "2025-07-24T22:37:10.424948+05:30"
+    },
+    {
+      "cpu_available": "15799674630n",
+      "cpu_capacity": "16",
+      "cpu_usage": "90325370n",
+      "memory_available": "56671608Ki",
+      "memory_capacity": "65858880Ki",
+      "memory_usage": "3379144Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-sp-7bd87fcc-qpqq",
+      "timestamp": "2025-07-24T22:37:10.424949+05:30"
+    },
+    {
+      "cpu_available": "15082390835n",
+      "cpu_capacity": "16",
+      "cpu_usage": "807609165n",
+      "memory_available": "56647880Ki",
+      "memory_capacity": "65858880Ki",
+      "memory_usage": "3402872Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-sp-7bd87fcc-vht6",
+      "timestamp": "2025-07-24T22:37:10.424951+05:30"
+    },
+    {
+      "cpu_available": "15717618906n",
+      "cpu_capacity": "16",
+      "cpu_usage": "172381094n",
+      "memory_available": "54655504Ki",
+      "memory_capacity": "65858880Ki",
+      "memory_usage": "5395248Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-sp-7bd87fcc-xg47",
+      "timestamp": "2025-07-24T22:37:10.424951+05:30"
+    },
+    {
+      "cpu_available": "15768482612n",
+      "cpu_capacity": "16",
+      "cpu_usage": "121517388n",
+      "memory_available": "53606312Ki",
+      "memory_capacity": "65858880Ki",
+      "memory_usage": "6444440Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-sp-7bd87fcc-xq4c",
+      "timestamp": "2025-07-24T22:37:10.424954+05:30"
+    },
+    {
+      "cpu_available": "15776934590n",
+      "cpu_capacity": "16",
+      "cpu_usage": "113065410n",
+      "memory_available": "37169908Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "22875924Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-to-130b46b9-jdc6",
+      "timestamp": "2025-07-24T22:37:10.424954+05:30"
+    },
+    {
+      "cpu_available": "15756197184n",
+      "cpu_capacity": "16",
+      "cpu_usage": "133802816n",
+      "memory_available": "34750420Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "25295412Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-2dps",
+      "timestamp": "2025-07-24T22:37:10.424955+05:30"
+    },
+    {
+      "cpu_available": "15782777686n",
+      "cpu_capacity": "16",
+      "cpu_usage": "107222314n",
+      "memory_available": "37289448Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "22756384Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-2kjn",
+      "timestamp": "2025-07-24T22:37:10.424955+05:30"
+    },
+    {
+      "cpu_available": "15800794379n",
+      "cpu_capacity": "16",
+      "cpu_usage": "89205621n",
+      "memory_available": "46796032Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "13249800Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-2trm",
+      "timestamp": "2025-07-24T22:37:10.424957+05:30"
+    },
+    {
+      "cpu_available": "14704074025n",
+      "cpu_capacity": "16",
+      "cpu_usage": "1185925975n",
+      "memory_available": "51481880Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "8563952Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-47rj",
+      "timestamp": "2025-07-24T22:37:10.424958+05:30"
+    },
+    {
+      "cpu_available": "15752418225n",
+      "cpu_capacity": "16",
+      "cpu_usage": "137581775n",
+      "memory_available": "27711216Ki",
+      "memory_capacity": "65853980Ki",
+      "memory_usage": "32334636Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-4vvr",
+      "timestamp": "2025-07-24T22:37:10.424958+05:30"
+    },
+    {
+      "cpu_available": "15815935776n",
+      "cpu_capacity": "16",
+      "cpu_usage": "74064224n",
+      "memory_available": "49380156Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "10665676Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-5fcs",
+      "timestamp": "2025-07-24T22:37:10.424958+05:30"
+    },
+    {
+      "cpu_available": "15728642177n",
+      "cpu_capacity": "16",
+      "cpu_usage": "161357823n",
+      "memory_available": "40064340Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "19981492Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-5frl",
+      "timestamp": "2025-07-24T22:37:10.424959+05:30"
+    },
+    {
+      "cpu_available": "15761552928n",
+      "cpu_capacity": "16",
+      "cpu_usage": "128447072n",
+      "memory_available": "39585120Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "20460712Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-5mwh",
+      "timestamp": "2025-07-24T22:37:10.424962+05:30"
+    },
+    {
+      "cpu_available": "13915394191n",
+      "cpu_capacity": "16",
+      "cpu_usage": "1974605809n",
+      "memory_available": "47961172Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "12084660Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-5r24",
+      "timestamp": "2025-07-24T22:37:10.424964+05:30"
+    },
+    {
+      "cpu_available": "15434609974n",
+      "cpu_capacity": "16",
+      "cpu_usage": "455390026n",
+      "memory_available": "36513752Ki",
+      "memory_capacity": "65853952Ki",
+      "memory_usage": "23532072Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-5x8c",
+      "timestamp": "2025-07-24T22:37:10.424965+05:30"
+    },
+    {
+      "cpu_available": "15733725100n",
+      "cpu_capacity": "16",
+      "cpu_usage": "156274900n",
+      "memory_available": "33024236Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "27021596Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-5zl8",
+      "timestamp": "2025-07-24T22:37:10.424965+05:30"
+    },
+    {
+      "cpu_available": "15807783617n",
+      "cpu_capacity": "16",
+      "cpu_usage": "82216383n",
+      "memory_available": "51941820Ki",
+      "memory_capacity": "65853980Ki",
+      "memory_usage": "8104032Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-6cfd",
+      "timestamp": "2025-07-24T22:37:10.424965+05:30"
+    },
+    {
+      "cpu_available": "14881044777n",
+      "cpu_capacity": "16",
+      "cpu_usage": "1008955223n",
+      "memory_available": "28755808Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "31290024Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-6ks9",
+      "timestamp": "2025-07-24T22:37:10.424966+05:30"
+    },
+    {
+      "cpu_available": "15758930425n",
+      "cpu_capacity": "16",
+      "cpu_usage": "131069575n",
+      "memory_available": "47621768Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "12424064Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-6rm5",
+      "timestamp": "2025-07-24T22:37:10.424966+05:30"
+    },
+    {
+      "cpu_available": "15830448467n",
+      "cpu_capacity": "16",
+      "cpu_usage": "59551533n",
+      "memory_available": "49271848Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "10773984Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-774l",
+      "timestamp": "2025-07-24T22:37:10.424968+05:30"
+    },
+    {
+      "cpu_available": "15833814245n",
+      "cpu_capacity": "16",
+      "cpu_usage": "56185755n",
+      "memory_available": "51844048Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "8201784Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-789g",
+      "timestamp": "2025-07-24T22:37:10.424968+05:30"
+    },
+    {
+      "cpu_available": "14706725537n",
+      "cpu_capacity": "16",
+      "cpu_usage": "1183274463n",
+      "memory_available": "27093332Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "32952500Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-7nnz",
+      "timestamp": "2025-07-24T22:37:10.42497+05:30"
+    },
+    {
+      "cpu_available": "14963099416n",
+      "cpu_capacity": "16",
+      "cpu_usage": "926900584n",
+      "memory_available": "47830848Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "12214984Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-7pk9",
+      "timestamp": "2025-07-24T22:37:10.42497+05:30"
+    },
+    {
+      "cpu_available": "15116043085n",
+      "cpu_capacity": "16",
+      "cpu_usage": "773956915n",
+      "memory_available": "37402164Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "22643668Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-84jw",
+      "timestamp": "2025-07-24T22:37:10.424972+05:30"
+    },
+    {
+      "cpu_available": "15785496095n",
+      "cpu_capacity": "16",
+      "cpu_usage": "104503905n",
+      "memory_available": "48117480Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "11928352Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-8p4t",
+      "timestamp": "2025-07-24T22:37:10.424984+05:30"
+    },
+    {
+      "cpu_available": "15817091303n",
+      "cpu_capacity": "16",
+      "cpu_usage": "72908697n",
+      "memory_available": "50821036Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "9224796Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-8zjm",
+      "timestamp": "2025-07-24T22:37:10.424987+05:30"
+    },
+    {
+      "cpu_available": "15629777815n",
+      "cpu_capacity": "16",
+      "cpu_usage": "260222185n",
+      "memory_available": "23091736Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "36954096Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-92q9",
+      "timestamp": "2025-07-24T22:37:10.424987+05:30"
+    },
+    {
+      "cpu_available": "12425383697n",
+      "cpu_capacity": "16",
+      "cpu_usage": "3464616303n",
+      "memory_available": "38192068Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "21853764Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-9ctg",
+      "timestamp": "2025-07-24T22:37:10.424987+05:30"
+    },
+    {
+      "cpu_available": "15787902889n",
+      "cpu_capacity": "16",
+      "cpu_usage": "102097111n",
+      "memory_available": "45906848Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "14138984Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-9jxr",
+      "timestamp": "2025-07-24T22:37:10.424988+05:30"
+    },
+    {
+      "cpu_available": "15757938932n",
+      "cpu_capacity": "16",
+      "cpu_usage": "132061068n",
+      "memory_available": "34782232Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "25263600Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-9kfp",
+      "timestamp": "2025-07-24T22:37:10.42499+05:30"
+    },
+    {
+      "cpu_available": "14100475685n",
+      "cpu_capacity": "16",
+      "cpu_usage": "1789524315n",
+      "memory_available": "38266048Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "21779784Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-b4lq",
+      "timestamp": "2025-07-24T22:37:10.424992+05:30"
+    },
+    {
+      "cpu_available": "15709458276n",
+      "cpu_capacity": "16",
+      "cpu_usage": "180541724n",
+      "memory_available": "35616332Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "24429500Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-b65x",
+      "timestamp": "2025-07-24T22:37:10.424994+05:30"
+    },
+    {
+      "cpu_available": "15830732365n",
+      "cpu_capacity": "16",
+      "cpu_usage": "59267635n",
+      "memory_available": "53736028Ki",
+      "memory_capacity": "65853952Ki",
+      "memory_usage": "6309796Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-bfm7",
+      "timestamp": "2025-07-24T22:37:10.424994+05:30"
+    },
+    {
+      "cpu_available": "15460816022n",
+      "cpu_capacity": "16",
+      "cpu_usage": "429183978n",
+      "memory_available": "44499140Ki",
+      "memory_capacity": "65853980Ki",
+      "memory_usage": "15546712Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-br4v",
+      "timestamp": "2025-07-24T22:37:10.424995+05:30"
+    },
+    {
+      "cpu_available": "15797430166n",
+      "cpu_capacity": "16",
+      "cpu_usage": "92569834n",
+      "memory_available": "42507420Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "17538412Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-brll",
+      "timestamp": "2025-07-24T22:37:10.424995+05:30"
+    },
+    {
+      "cpu_available": "12787849463n",
+      "cpu_capacity": "16",
+      "cpu_usage": "3102150537n",
+      "memory_available": "34286924Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "25758908Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-c4lx",
+      "timestamp": "2025-07-24T22:37:10.424997+05:30"
+    },
+    {
+      "cpu_available": "15780195297n",
+      "cpu_capacity": "16",
+      "cpu_usage": "109804703n",
+      "memory_available": "39956392Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "20089440Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-c88w",
+      "timestamp": "2025-07-24T22:37:10.424998+05:30"
+    },
+    {
+      "cpu_available": "14365479957n",
+      "cpu_capacity": "16",
+      "cpu_usage": "1524520043n",
+      "memory_available": "26868672Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "33177160Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-cnpm",
+      "timestamp": "2025-07-24T22:37:10.425+05:30"
+    },
+    {
+      "cpu_available": "15773250250n",
+      "cpu_capacity": "16",
+      "cpu_usage": "116749750n",
+      "memory_available": "42670544Ki",
+      "memory_capacity": "65853952Ki",
+      "memory_usage": "17375280Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-cnqc",
+      "timestamp": "2025-07-24T22:37:10.425002+05:30"
+    },
+    {
+      "cpu_available": "15698416023n",
+      "cpu_capacity": "16",
+      "cpu_usage": "191583977n",
+      "memory_available": "33082864Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "26962968Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-d22c",
+      "timestamp": "2025-07-24T22:37:10.425002+05:30"
+    },
+    {
+      "cpu_available": "15546009041n",
+      "cpu_capacity": "16",
+      "cpu_usage": "343990959n",
+      "memory_available": "43366Mi",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "15639048Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-dgsr",
+      "timestamp": "2025-07-24T22:37:10.425003+05:30"
+    },
+    {
+      "cpu_available": "15287088154n",
+      "cpu_capacity": "16",
+      "cpu_usage": "602911846n",
+      "memory_available": "45481008Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "14564824Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-djc4",
+      "timestamp": "2025-07-24T22:37:10.425003+05:30"
+    },
+    {
+      "cpu_available": "15015729443n",
+      "cpu_capacity": "16",
+      "cpu_usage": "874270557n",
+      "memory_available": "39495704Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "20550128Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-dmm8",
+      "timestamp": "2025-07-24T22:37:10.425003+05:30"
+    },
+    {
+      "cpu_available": "14786834080n",
+      "cpu_capacity": "16",
+      "cpu_usage": "1103165920n",
+      "memory_available": "25746680Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "34299152Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-dq79",
+      "timestamp": "2025-07-24T22:37:10.425004+05:30"
+    },
+    {
+      "cpu_available": "15484566979n",
+      "cpu_capacity": "16",
+      "cpu_usage": "405433021n",
+      "memory_available": "43131260Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "16914572Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-f4dn",
+      "timestamp": "2025-07-24T22:37:10.425004+05:30"
+    },
+    {
+      "cpu_available": "15430166113n",
+      "cpu_capacity": "16",
+      "cpu_usage": "459833887n",
+      "memory_available": "37542716Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "22503116Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-f8tb",
+      "timestamp": "2025-07-24T22:37:10.425004+05:30"
+    },
+    {
+      "cpu_available": "14227379768n",
+      "cpu_capacity": "16",
+      "cpu_usage": "1662620232n",
+      "memory_available": "29502496Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "30543336Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-fkdz",
+      "timestamp": "2025-07-24T22:37:10.425005+05:30"
+    },
+    {
+      "cpu_available": "15721149879n",
+      "cpu_capacity": "16",
+      "cpu_usage": "168850121n",
+      "memory_available": "31419288Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "28626544Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-fp4x",
+      "timestamp": "2025-07-24T22:37:10.425005+05:30"
+    },
+    {
+      "cpu_available": "15750386378n",
+      "cpu_capacity": "16",
+      "cpu_usage": "139613622n",
+      "memory_available": "40066204Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "19979628Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-fvqq",
+      "timestamp": "2025-07-24T22:37:10.425006+05:30"
+    },
+    {
+      "cpu_available": "15064683966n",
+      "cpu_capacity": "16",
+      "cpu_usage": "825316034n",
+      "memory_available": "55580568Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "4465264Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-gcjv",
+      "timestamp": "2025-07-24T22:37:10.425007+05:30"
+    },
+    {
+      "cpu_available": "15789953467n",
+      "cpu_capacity": "16",
+      "cpu_usage": "100046533n",
+      "memory_available": "47301812Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "12744020Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-ghdt",
+      "timestamp": "2025-07-24T22:37:10.425007+05:30"
+    },
+    {
+      "cpu_available": "15729537742n",
+      "cpu_capacity": "16",
+      "cpu_usage": "160462258n",
+      "memory_available": "43250328Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "16795504Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-gll7",
+      "timestamp": "2025-07-24T22:37:10.425008+05:30"
+    },
+    {
+      "cpu_available": "15827202886n",
+      "cpu_capacity": "16",
+      "cpu_usage": "62797114n",
+      "memory_available": "50692988Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "9352844Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-j9b2",
+      "timestamp": "2025-07-24T22:37:10.425008+05:30"
+    },
+    {
+      "cpu_available": "15784173564n",
+      "cpu_capacity": "16",
+      "cpu_usage": "105826436n",
+      "memory_available": "39064140Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "20981692Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-khmb",
+      "timestamp": "2025-07-24T22:37:10.425009+05:30"
+    },
+    {
+      "cpu_available": "15518633118n",
+      "cpu_capacity": "16",
+      "cpu_usage": "371366882n",
+      "memory_available": "39710936Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "20334896Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-knw6",
+      "timestamp": "2025-07-24T22:37:10.425009+05:30"
+    },
+    {
+      "cpu_available": "12752311859n",
+      "cpu_capacity": "16",
+      "cpu_usage": "3137688141n",
+      "memory_available": "39366940Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "20678892Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-kp7n",
+      "timestamp": "2025-07-24T22:37:10.42501+05:30"
+    },
+    {
+      "cpu_available": "13420350802n",
+      "cpu_capacity": "16",
+      "cpu_usage": "2469649198n",
+      "memory_available": "37772836Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "22272996Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-ks7z",
+      "timestamp": "2025-07-24T22:37:10.42501+05:30"
+    },
+    {
+      "cpu_available": "15803579837n",
+      "cpu_capacity": "16",
+      "cpu_usage": "86420163n",
+      "memory_available": "52292896Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "7752936Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-ksv8",
+      "timestamp": "2025-07-24T22:37:10.425011+05:30"
+    },
+    {
+      "cpu_available": "15536332149n",
+      "cpu_capacity": "16",
+      "cpu_usage": "353667851n",
+      "memory_available": "36075432Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "23970400Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-ktns",
+      "timestamp": "2025-07-24T22:37:10.425011+05:30"
+    },
+    {
+      "cpu_available": "13458117675n",
+      "cpu_capacity": "16",
+      "cpu_usage": "2431882325n",
+      "memory_available": "42358808Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "17687024Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-kvpl",
+      "timestamp": "2025-07-24T22:37:10.425012+05:30"
+    },
+    {
+      "cpu_available": "15772513117n",
+      "cpu_capacity": "16",
+      "cpu_usage": "117486883n",
+      "memory_available": "34683124Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "25362708Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-lc8v",
+      "timestamp": "2025-07-24T22:37:10.425012+05:30"
+    },
+    {
+      "cpu_available": "15770304138n",
+      "cpu_capacity": "16",
+      "cpu_usage": "119695862n",
+      "memory_available": "42596416Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "17449416Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-ldn7",
+      "timestamp": "2025-07-24T22:37:10.425012+05:30"
+    },
+    {
+      "cpu_available": "15786346532n",
+      "cpu_capacity": "16",
+      "cpu_usage": "103653468n",
+      "memory_available": "48388560Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "11657272Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-ltzl",
+      "timestamp": "2025-07-24T22:37:10.425013+05:30"
+    },
+    {
+      "cpu_available": "15733780103n",
+      "cpu_capacity": "16",
+      "cpu_usage": "156219897n",
+      "memory_available": "29174140Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "30871692Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-lwqp",
+      "timestamp": "2025-07-24T22:37:10.425013+05:30"
+    },
+    {
+      "cpu_available": "15772776948n",
+      "cpu_capacity": "16",
+      "cpu_usage": "117223052n",
+      "memory_available": "42260092Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "17785740Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-mxds",
+      "timestamp": "2025-07-24T22:37:10.425014+05:30"
+    },
+    {
+      "cpu_available": "15787492111n",
+      "cpu_capacity": "16",
+      "cpu_usage": "102507889n",
+      "memory_available": "48102084Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "11943748Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-n82v",
+      "timestamp": "2025-07-24T22:37:10.425014+05:30"
+    },
+    {
+      "cpu_available": "15462182398n",
+      "cpu_capacity": "16",
+      "cpu_usage": "427817602n",
+      "memory_available": "28413236Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "31632596Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-nvch",
+      "timestamp": "2025-07-24T22:37:10.425014+05:30"
+    },
+    {
+      "cpu_available": "15828075760n",
+      "cpu_capacity": "16",
+      "cpu_usage": "61924240n",
+      "memory_available": "56463968Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "3581864Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-q5jn",
+      "timestamp": "2025-07-24T22:37:10.425015+05:30"
+    },
+    {
+      "cpu_available": "15792451176n",
+      "cpu_capacity": "16",
+      "cpu_usage": "97548824n",
+      "memory_available": "41081604Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "18964228Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-q86m",
+      "timestamp": "2025-07-24T22:37:10.425015+05:30"
+    },
+    {
+      "cpu_available": "15641661130n",
+      "cpu_capacity": "16",
+      "cpu_usage": "248338870n",
+      "memory_available": "53980344Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "6065488Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-qppp",
+      "timestamp": "2025-07-24T22:37:10.425015+05:30"
+    },
+    {
+      "cpu_available": "15488799018n",
+      "cpu_capacity": "16",
+      "cpu_usage": "401200982n",
+      "memory_available": "30826676Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "29219156Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-r25k",
+      "timestamp": "2025-07-24T22:37:10.425016+05:30"
+    },
+    {
+      "cpu_available": "15638589633n",
+      "cpu_capacity": "16",
+      "cpu_usage": "251410367n",
+      "memory_available": "24675372Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "35370460Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-rd54",
+      "timestamp": "2025-07-24T22:37:10.425016+05:30"
+    },
+    {
+      "cpu_available": "15582654918n",
+      "cpu_capacity": "16",
+      "cpu_usage": "307345082n",
+      "memory_available": "45483828Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "14562004Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-rd7g",
+      "timestamp": "2025-07-24T22:37:10.425017+05:30"
+    },
+    {
+      "cpu_available": "15726601742n",
+      "cpu_capacity": "16",
+      "cpu_usage": "163398258n",
+      "memory_available": "44887168Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "15158664Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-rxtm",
+      "timestamp": "2025-07-24T22:37:10.425017+05:30"
+    },
+    {
+      "cpu_available": "14511476243n",
+      "cpu_capacity": "16",
+      "cpu_usage": "1378523757n",
+      "memory_available": "33905780Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "26140052Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-s2x6",
+      "timestamp": "2025-07-24T22:37:10.425018+05:30"
+    },
+    {
+      "cpu_available": "14542776394n",
+      "cpu_capacity": "16",
+      "cpu_usage": "1347223606n",
+      "memory_available": "47603032Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "12442800Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-sdgp",
+      "timestamp": "2025-07-24T22:37:10.425018+05:30"
+    },
+    {
+      "cpu_available": "15775109776n",
+      "cpu_capacity": "16",
+      "cpu_usage": "114890224n",
+      "memory_available": "44794456Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "15251376Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-t9vt",
+      "timestamp": "2025-07-24T22:37:10.425018+05:30"
+    },
+    {
+      "cpu_available": "15415229739n",
+      "cpu_capacity": "16",
+      "cpu_usage": "474770261n",
+      "memory_available": "32972080Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "27073752Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-tjs5",
+      "timestamp": "2025-07-24T22:37:10.425019+05:30"
+    },
+    {
+      "cpu_available": "11941947622n",
+      "cpu_capacity": "16",
+      "cpu_usage": "3948052378n",
+      "memory_available": "37673468Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "22372364Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-tnvt",
+      "timestamp": "2025-07-24T22:37:10.42502+05:30"
+    },
+    {
+      "cpu_available": "14760040540n",
+      "cpu_capacity": "16",
+      "cpu_usage": "1129959460n",
+      "memory_available": "47327660Ki",
+      "memory_capacity": "65853952Ki",
+      "memory_usage": "12718164Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-vrxx",
+      "timestamp": "2025-07-24T22:37:10.42502+05:30"
+    },
+    {
+      "cpu_available": "15798909575n",
+      "cpu_capacity": "16",
+      "cpu_usage": "91090425n",
+      "memory_available": "44389928Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "15655904Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-w6dh",
+      "timestamp": "2025-07-24T22:37:10.42502+05:30"
+    },
+    {
+      "cpu_available": "15823147170n",
+      "cpu_capacity": "16",
+      "cpu_usage": "66852830n",
+      "memory_available": "47251828Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "12794004Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-w72g",
+      "timestamp": "2025-07-24T22:37:10.425021+05:30"
+    },
+    {
+      "cpu_available": "15756259177n",
+      "cpu_capacity": "16",
+      "cpu_usage": "133740823n",
+      "memory_available": "37016428Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "23029404Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-w7br",
+      "timestamp": "2025-07-24T22:37:10.425021+05:30"
+    },
+    {
+      "cpu_available": "15747859588n",
+      "cpu_capacity": "16",
+      "cpu_usage": "142140412n",
+      "memory_available": "30455520Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "29590312Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-wt72",
+      "timestamp": "2025-07-24T22:37:10.425022+05:30"
+    },
+    {
+      "cpu_available": "13520059149n",
+      "cpu_capacity": "16",
+      "cpu_usage": "2369940851n",
+      "memory_available": "47018240Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "13027592Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-wtnh",
+      "timestamp": "2025-07-24T22:37:10.425022+05:30"
+    },
+    {
+      "cpu_available": "15781040761n",
+      "cpu_capacity": "16",
+      "cpu_usage": "108959239n",
+      "memory_available": "44688892Ki",
+      "memory_capacity": "65853952Ki",
+      "memory_usage": "15356932Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-x467",
+      "timestamp": "2025-07-24T22:37:10.425022+05:30"
+    },
+    {
+      "cpu_available": "15770204869n",
+      "cpu_capacity": "16",
+      "cpu_usage": "119795131n",
+      "memory_available": "41470200Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "18575632Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-xcmw",
+      "timestamp": "2025-07-24T22:37:10.425023+05:30"
+    },
+    {
+      "cpu_available": "15776019147n",
+      "cpu_capacity": "16",
+      "cpu_usage": "113980853n",
+      "memory_available": "44290556Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "15755276Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-xkgx",
+      "timestamp": "2025-07-24T22:37:10.425023+05:30"
+    },
+    {
+      "cpu_available": "14478082902n",
+      "cpu_capacity": "16",
+      "cpu_usage": "1411917098n",
+      "memory_available": "37677288Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "22368544Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-xmkw",
+      "timestamp": "2025-07-24T22:37:10.425023+05:30"
+    },
+    {
+      "cpu_available": "15811064877n",
+      "cpu_capacity": "16",
+      "cpu_usage": "78935123n",
+      "memory_available": "50544384Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "9501448Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-xnq5",
+      "timestamp": "2025-07-24T22:37:10.425047+05:30"
+    },
+    {
+      "cpu_available": "15100258965n",
+      "cpu_capacity": "16",
+      "cpu_usage": "789741035n",
+      "memory_available": "43847068Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "16198764Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-xrx6",
+      "timestamp": "2025-07-24T22:37:10.425047+05:30"
+    },
+    {
+      "cpu_available": "15769937544n",
+      "cpu_capacity": "16",
+      "cpu_usage": "120062456n",
+      "memory_available": "34725468Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "25320364Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-to-512af8f7-z2k6",
+      "timestamp": "2025-07-24T22:37:10.425047+05:30"
+    },
+    {
+      "cpu_available": "14808246092n",
+      "cpu_capacity": "16",
+      "cpu_usage": "1081753908n",
+      "memory_available": "35893116Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "24152716Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-to-97e1476d-h96j",
+      "timestamp": "2025-07-24T22:37:10.425048+05:30"
+    },
+    {
+      "cpu_available": "15657341521n",
+      "cpu_capacity": "16",
+      "cpu_usage": "232658479n",
+      "memory_available": "24764592Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "35281240Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-to-97e1476d-jqjb",
+      "timestamp": "2025-07-24T22:37:10.425048+05:30"
+    },
+    {
+      "cpu_available": "14731463820n",
+      "cpu_capacity": "16",
+      "cpu_usage": "1158536180n",
+      "memory_available": "41627304Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "18418528Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-to-97e1476d-wq97",
+      "timestamp": "2025-07-24T22:37:10.425048+05:30"
+    },
+    {
+      "cpu_available": "15274053884n",
+      "cpu_capacity": "16",
+      "cpu_usage": "615946116n",
+      "memory_available": "27625208Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "32420624Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-to-97e1476d-z8ql",
+      "timestamp": "2025-07-24T22:37:10.425049+05:30"
+    },
+    {
+      "cpu_available": "15237429217n",
+      "cpu_capacity": "16",
+      "cpu_usage": "652570783n",
+      "memory_available": "30985084Ki",
+      "memory_capacity": "65853960Ki",
+      "memory_usage": "29060748Ki",
+      "name": "gke-k8s-central-stg--np-cntr-xcntr-to-97e1476d-zw9d",
+      "timestamp": "2025-07-24T22:37:10.425049+05:30"
+    },
+    {
+      "cpu_available": "6673147437n",
+      "cpu_capacity": "8",
+      "cpu_usage": "1236852563n",
+      "memory_available": "29710324Ki",
+      "memory_capacity": "65860796Ki",
+      "memory_usage": "30342344Ki",
+      "name": "gke-k8s-central-stg--np-infr-sre-shar-3d7afb63-hrw7",
+      "timestamp": "2025-07-24T22:37:10.42505+05:30"
+    },
+    {
+      "cpu_available": "5393989781n",
+      "cpu_capacity": "8",
+      "cpu_usage": "2516010219n",
+      "memory_available": "32878140Ki",
+      "memory_capacity": "65860800Ki",
+      "memory_usage": "27174532Ki",
+      "name": "gke-k8s-central-stg--np-infr-sre-shar-3d7afb63-ltgh",
+      "timestamp": "2025-07-24T22:37:10.42505+05:30"
+    },
+    {
+      "cpu_available": "7248433516n",
+      "cpu_capacity": "8",
+      "cpu_usage": "661566484n",
+      "memory_available": "50010240Ki",
+      "memory_capacity": "65860800Ki",
+      "memory_usage": "10042432Ki",
+      "name": "gke-k8s-central-stg--np-infr-sre-shar-3d7afb63-mvvj",
+      "timestamp": "2025-07-24T22:37:10.42505+05:30"
+    },
+    {
+      "cpu_available": "6697129451n",
+      "cpu_capacity": "8",
+      "cpu_usage": "1212870549n",
+      "memory_available": "33407084Ki",
+      "memory_capacity": "65860796Ki",
+      "memory_usage": "26645584Ki",
+      "name": "gke-k8s-central-stg--np-infr-sre-shar-3d7afb63-v4zw",
+      "timestamp": "2025-07-24T22:37:10.425051+05:30"
+    },
+    {
+      "cpu_available": "14948960461n",
+      "cpu_capacity": "16",
+      "cpu_usage": "941039539n",
+      "memory_available": "108584068Ki",
+      "memory_capacity": "131919124Ki",
+      "memory_usage": "13626512Ki",
+      "name": "gke-k8s-central-stg--np-infr-sre-vmag-29805a41-2qzz",
+      "timestamp": "2025-07-24T22:37:10.425051+05:30"
+    },
+    {
+      "cpu_available": "14822404576n",
+      "cpu_capacity": "16",
+      "cpu_usage": "1067595424n",
+      "memory_available": "108604296Ki",
+      "memory_capacity": "131919124Ki",
+      "memory_usage": "13606284Ki",
+      "name": "gke-k8s-central-stg--np-infr-sre-vmag-29805a41-nvxn",
+      "timestamp": "2025-07-24T22:37:10.425051+05:30"
+    },
+    {
+      "cpu_available": "3075076658n",
+      "cpu_capacity": "4",
+      "cpu_usage": "844923342n",
+      "memory_available": "26713812Ki",
+      "memory_capacity": "32880776Ki",
+      "memory_usage": "2372020Ki",
+      "name": "gke-k8s-central-stg--np-infr-sre-vmin-1d70e3e7-ndfn",
+      "timestamp": "2025-07-24T22:37:10.425052+05:30"
+    },
+    {
+      "cpu_available": "2977982579n",
+      "cpu_capacity": "4",
+      "cpu_usage": "942017421n",
+      "memory_available": "26273676Ki",
+      "memory_capacity": "32880776Ki",
+      "memory_usage": "2812156Ki",
+      "name": "gke-k8s-central-stg--np-infr-sre-vmin-1d70e3e7-nxfc",
+      "timestamp": "2025-07-24T22:37:10.425052+05:30"
+    },
+    {
+      "cpu_available": "12380877065n",
+      "cpu_capacity": "16",
+      "cpu_usage": "3509122935n",
+      "memory_available": "118332508Ki",
+      "memory_capacity": "131919120Ki",
+      "memory_usage": "3878068Ki",
+      "name": "gke-k8s-central-stg--np-infr-sre-vmsl-4189b2db-4wp4",
+      "timestamp": "2025-07-24T22:37:10.425052+05:30"
+    },
+    {
+      "cpu_available": "13219097925n",
+      "cpu_capacity": "16",
+      "cpu_usage": "2670902075n",
+      "memory_available": "119064952Ki",
+      "memory_capacity": "131919120Ki",
+      "memory_usage": "3145624Ki",
+      "name": "gke-k8s-central-stg--np-infr-sre-vmsl-4189b2db-r5xl",
+      "timestamp": "2025-07-24T22:37:10.425053+05:30"
+    },
+    {
+      "cpu_available": "15272629811n",
+      "cpu_capacity": "16",
+      "cpu_usage": "617370189n",
+      "memory_available": "91807584Ki",
+      "memory_capacity": "131919132Ki",
+      "memory_usage": "30403004Ki",
+      "name": "gke-k8s-central-stg--np-infr-sre-vmst-bba5fd77-f8ft",
+      "timestamp": "2025-07-24T22:37:10.425053+05:30"
+    },
+    {
+      "cpu_available": "15225362609n",
+      "cpu_capacity": "16",
+      "cpu_usage": "664637391n",
+      "memory_available": "91868240Ki",
+      "memory_capacity": "131919132Ki",
+      "memory_usage": "30342348Ki",
+      "name": "gke-k8s-central-stg--np-infr-sre-vmst-bba5fd77-kuys",
+      "timestamp": "2025-07-24T22:37:10.425054+05:30"
+    },
+    {
+      "cpu_available": "15311520040n",
+      "cpu_capacity": "16",
+      "cpu_usage": "578479960n",
+      "memory_available": "91824472Ki",
+      "memory_capacity": "131919132Ki",
+      "memory_usage": "30386116Ki",
+      "name": "gke-k8s-central-stg--np-infr-sre-vmst-bba5fd77-qyjj",
+      "timestamp": "2025-07-24T22:37:10.425054+05:30"
+    },
+    {
+      "cpu_available": "15213768993n",
+      "cpu_capacity": "16",
+      "cpu_usage": "676231007n",
+      "memory_available": "92073076Ki",
+      "memory_capacity": "131919132Ki",
+      "memory_usage": "30137512Ki",
+      "name": "gke-k8s-central-stg--np-infr-sre-vmst-bba5fd77-vgwj",
+      "timestamp": "2025-07-24T22:37:10.425055+05:30"
+    },
+    {
+      "cpu_available": "15217923374n",
+      "cpu_capacity": "16",
+      "cpu_usage": "672076626n",
+      "memory_available": "91555360Ki",
+      "memory_capacity": "131919132Ki",
+      "memory_usage": "30655228Ki",
+      "name": "gke-k8s-central-stg--np-infr-sre-vmst-bba5fd77-ybpv",
+      "timestamp": "2025-07-24T22:37:10.425055+05:30"
+    }
+  ],
+  "pod_metrics": null,
+  "timestamp": "2025-07-24T22:37:10.516471+05:30"
+}
+
+===============================================
+Capture SUMMARY
+===============================================
+Mode: Capture
+Namespace: default
+Output File: reports/k3s_agent_20250724_223706.txt
+Generated: Thu Jul 24 22:37:11 IST 2025

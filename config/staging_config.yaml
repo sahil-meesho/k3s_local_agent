@@ -1,0 +1,16 @@
+# Staging Agent Configuration
+server:
+  port: "8082"
+  host: "localhost"
+
+monitor:
+  enabled: true
+
+staging:
+  agent_id: "staging-agent-1"
+  control_plane_url: "http://localhost:8080"
+  control_plane_port: 8080
+  kind_cluster_name: "staging-cluster"
+  local_namespace: "staging"
+  agent_port: 8082
+  sync_interval: "30s" 

@@ -1,0 +1,28 @@
+LOCAL AGENT - UNIFIED Monitor REPORT
+=====================================
+Generated: Thu Jul 24 22:21:53 IST 2025
+Mode: Monitor
+Capture Type: Full (Resources + Health)
+Output File: reports/monitor_20250724_195540.txt
+Log File: logs/monitor.log
+
+TIMESTAMP: 2025-07-24 22:21:53
+===============================================
+
+RESOURCE INFORMATION
+====================
+
+{"system":{"hostname":"JHMH32WDGT","platform":"darwin","os":"darwin","architecture":"arm64","uptime":730700,"boot_time":"2025-07-16T11:23:33+05:30"},"cpu":{"usage_percent":7.593126623580384,"core_count":14,"model_name":"Apple M4 Pro","timestamp":"2025-07-24T22:21:53.242708+05:30"},"memory":{"total":25769803776,"available":8205860864,"used":17563942912,"free":263389184,"used_percent":68.15706888834636,"timestamp":"2025-07-24T22:21:53.242715+05:30"},"vpn":{"is_connected":true,"ip_address":"10.255.23.12","interface":"utun4","timestamp":"2025-07-24T22:21:53.242766+05:30"},"health":{"is_healthy":true,"is_online":true,"has_internet":true,"timestamp":"2025-07-24T22:21:53.242786+05:30"},"timestamp":"2025-07-24T22:21:53.254069+05:30"}
+
+HEALTH INFORMATION
+==================
+
+{"has_internet":true,"is_healthy":true,"is_online":true,"timestamp":"2025-07-24T22:21:53.267794+05:30","vpn_status":{"interface":"utun4","ip_address":"10.255.23.12","is_connected":true,"timestamp":"2025-07-24T22:21:53.267772+05:30"}}
+
+===============================================
+Monitor SUMMARY
+===============================================
+Mode: Monitor
+Capture Type: Full (Resources + Health)
+Output File: reports/monitor_20250724_195540.txt
+Generated: Thu Jul 24 22:21:53 IST 2025

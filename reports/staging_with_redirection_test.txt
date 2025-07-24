@@ -1,0 +1,68 @@
+STAGING AGENT - Staging Capture REPORT
+=====================================
+Generated: Thu Jul 24 23:39:38 IST 2025
+Mode: Staging Capture
+Agent ID: staging-agent-JHMH32WDGT-1753380568
+Control Plane URL: http://localhost:8080
+Kind Cluster: staging-cluster
+Local Namespace: staging
+Agent Port: 8082
+Output File: reports/staging_with_redirection_test.txt
+Log File: logs/staging_agent.log
+
+TIMESTAMP: 2025-07-24 23:39:38
+===============================================
+
+STAGING STATUS
+==============
+
+{
+  "agent_id": "staging-agent-JHMH32WDGT-1753380568",
+  "status": "healthy",
+  "total_pods": 0,
+  "running_pods": 0,
+  "failed_pods": 0,
+  "staging_pods": {},
+  "kind_cluster_status": "unknown",
+  "last_sync": "2025-07-24T23:39:39.044265+05:30",
+  "timestamp": "2025-07-24T23:39:39.044265+05:30"
+}
+
+STAGING PODS
+============
+
+{
+  "pods": {},
+  "timestamp": "2025-07-24T23:39:39.044346+05:30",
+  "total_pods": 0
+}
+
+IP REDIRECTIONS
+===============
+
+{
+  "redirections": {},
+  "timestamp": "2025-07-24T23:39:39.044371+05:30",
+  "total_redirections": 0
+}
+
+REDIRECTION STATUS
+==================
+
+{
+  "active_redirections": 0,
+  "failed_redirections": 0,
+  "redirections": {},
+  "timestamp": "2025-07-24T23:39:39.044429+05:30",
+  "total_redirections": 0
+}
+
+===============================================
+Staging Capture SUMMARY
+===============================================
+Mode: Staging Capture
+Agent ID: staging-agent-JHMH32WDGT-1753380568
+Control Plane URL: http://localhost:8080
+Kind Cluster: staging-cluster
+Output File: reports/staging_with_redirection_test.txt
+Generated: Thu Jul 24 23:39:39 IST 2025

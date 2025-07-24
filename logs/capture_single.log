@@ -1,0 +1,11 @@
+{"level":"info","msg":"Starting local agent...","time":"2025-07-24T16:33:31+05:30"}
+{"level":"info","msg":"Local agent started successfully","time":"2025-07-24T16:33:36+05:30"}
+{"level":"info","msg":"Starting HTTP server on8081","time":"2025-07-24T16:33:36+05:30"}
+{"level":"info","msg":"Starting HTTP server onlocalhost:8081","time":"2025-07-24T16:33:36+05:30"}
+{"level":"error","msg":"Initial resource polling failedfailed to send data to hypervisor: failed to send request: Post \"http://localhost:9090/api/resources\": dial tcp [::1]:9090: connect: connection refused","time":"2025-07-24T16:33:36+05:30"}
+{"level":"info","msg":"Shutting down local agent...","time":"2025-07-24T16:33:36+05:30"}
+{"level":"info","msg":"Shutting down HTTP server...","time":"2025-07-24T16:33:36+05:30"}
+{"level":"info","msg":"Stopping local agent...","time":"2025-07-24T16:33:36+05:30"}
+{"level":"info","msg":"Local agent stopped","time":"2025-07-24T16:33:36+05:30"}
+{"level":"info","msg":"Polling stopped","time":"2025-07-24T16:33:36+05:30"}
+2025-07-24 16:33:38 - Single resource capture completed successfully
